@@ -5,6 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Word of the Day - The Pro Se Companion</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .intro-section {
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            padding: 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: var(--text-secondary);
+        }
+        .intro-section p {
+            margin-bottom: 1.2rem;
+        }
+        .intro-section p:last-child {
+            margin-bottom: 0;
+        }
+        .word-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            transition: border-color 0.2s ease;
+        }
+        .word-card:hover {
+            border-color: var(--accent);
+        }
+        .word-card h3 {
+            font-size: 1.4rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+        .word-card .def-label {
+            font-weight: bold;
+            color: var(--text-primary);
+            margin-bottom: 0.3rem;
+        }
+        .word-card .def-text {
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+        .word-card .def-everyday {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--text-muted);
+        }
+        .word-card .def-legal {
+            padding-left: 1rem;
+            border-left: 3px solid var(--accent);
+        }
+        .week-nav {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem 2rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+        .week-nav h3 {
+            margin-bottom: 1rem;
+            color: var(--accent);
+        }
+        .week-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        .week-nav ul li {
+            margin-bottom: 0.5rem;
+        }
+        .week-nav ul li a {
+            color: var(--link);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .week-nav ul li a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+        .week-nav ul li.coming-soon a {
+            color: var(--text-muted);
+            pointer-events: none;
+        }
+        .week-nav ul li.coming-soon::after {
+            content: " (coming soon)";
+            color: var(--text-muted);
+            font-weight: normal;
+            font-style: italic;
+        }
+        .week-heading {
+            max-width: 800px;
+            margin: 3rem auto 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--accent);
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+        .bottom-note {
+            max-width: 800px;
+            margin: 3rem auto 0;
+            padding: 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-secondary);
+        }
+        .bottom-note a {
+            color: var(--link);
+            text-decoration: none;
+        }
+        .bottom-note a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -35,145 +157,201 @@
             <!-- ============================== -->
             <h3 class="episode-words-heading">Episode 1</h3>
 
-            <div class="definition-card">
-                <h3>Pro Se (also "Pro Per")</h3>
-                <p>A Latin term meaning "for oneself." A pro se litigant is a person who represents themselves in court without an attorney.</p>
-            </div>
+        <!-- ============================== -->
+        <!-- WEEK 1 -->
+        <!-- ============================== -->
+        <h3 class="week-heading" id="week-1">Week 1</h3>
 
-            <div class="definition-card">
-                <h3>Plaintiff</h3>
-                <p>The person or party who starts a lawsuit by filing a complaint with the court. In criminal cases, this is usually the government (the prosecution).</p>
+        <div class="word-card">
+            <h3>CAPACITY</h3>
+            <div class="def-everyday">
+                <p class="def-label">Everyday Definition:</p>
+                <p class="def-text">How much someone or something can do or hold; size or volume.</p>
             </div>
-
-            <div class="definition-card">
-                <h3>Defendant</h3>
-                <p>The person or party being sued (in a civil case) or charged with a crime (in a criminal case).</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Complaint / Petition</h3>
-                <p>The first document filed to start a lawsuit. It explains what happened, who is involved, and what the plaintiff wants the court to do.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Answer</h3>
-                <p>The defendant's written response to the complaint. It addresses each claim and states any defenses. There is usually a strict deadline to file this.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Motion</h3>
-                <p>A formal written request asking the court to make a decision or take an action. Examples: Motion to Dismiss, Motion for Summary Judgment, Motion to Compel.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Filing</h3>
-                <p>Submitting a document to the court so it becomes part of the official case record. Many courts now require electronic filing (e-filing).</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Service / Service of Process</h3>
-                <p>The legal requirement to deliver court documents to the other party. There are specific rules about how documents must be delivered (served).</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Docket</h3>
-                <p>The official record or log of all filings, hearings, and actions in a case. When you "access your case files," you are typically looking at the docket.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Discovery</h3>
-                <p>The phase of a lawsuit where both sides exchange information and evidence. This includes interrogatories (written questions), depositions (recorded testimony), and document requests.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Hearing</h3>
-                <p>A proceeding before a judge where arguments are heard. Not all hearings involve witnesses &mdash; many are just oral arguments on motions.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Order</h3>
-                <p>A written decision by a judge directing something to happen or ruling on a motion. Court orders are legally binding.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Judgment</h3>
-                <p>The final decision of the court that resolves the case. It determines who wins, and may include money damages or other relief.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Appeal</h3>
-                <p>A request to a higher court to review and change the decision of a lower court. There are strict deadlines and procedures for filing an appeal.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Statute of Limitations</h3>
-                <p>The deadline for filing a lawsuit. After this time passes, you generally lose the right to bring that claim. The time limit varies by type of case and by state.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Jurisdiction</h3>
-                <p>The authority of a court to hear a case. A court must have jurisdiction over the subject matter and the parties involved.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Venue</h3>
-                <p>The specific geographic location (county or district) where a case should be filed. Usually, this is where the events occurred or where the defendant lives.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Continuance</h3>
-                <p>A postponement of a court hearing or trial to a later date. You typically must file a motion requesting a continuance and show good cause.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Subpoena</h3>
-                <p>A court order requiring a person to appear in court to testify, or to produce documents. Ignoring a subpoena can result in contempt of court.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Contempt of Court</h3>
-                <p>Disobeying or disrespecting a court order or the court itself. Can result in fines or jail time.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Brief</h3>
-                <p>A written document submitted to the court that argues your legal position. It cites relevant laws, rules, and case law to support your argument.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Case Law / Precedent</h3>
-                <p>Past court decisions that establish legal principles. Courts generally follow precedent from higher courts in the same jurisdiction.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Affidavit</h3>
-                <p>A written statement of facts made under oath. It is signed before a notary public and can be used as evidence in court.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Default Judgment</h3>
-                <p>A judgment entered against a party who fails to respond to a complaint or appear in court within the required time. If you are sued, you MUST respond by the deadline or risk losing automatically.</p>
-            </div>
-
-            <div class="definition-card">
-                <h3>Summary Judgment</h3>
-                <p>A decision made by the court without a full trial, when the facts are undisputed and one party is clearly entitled to win as a matter of law.</p>
+            <div class="def-legal">
+                <p class="def-label">Legal Definition:</p>
+                <p class="def-text">The legal ability or status to sue, be sued, contract, inherit, or act for another.</p>
             </div>
         </div>
 
-        <div class="disclaimer" style="margin-top: 2rem;">
-            <p><strong>New words are added each week with every episode.</strong> If you encounter a legal term you do not understand, check your state court's self-help website or Cornell Law Institute's legal dictionary at <a href="https://www.law.cornell.edu/wex" target="_blank" rel="noopener">law.cornell.edu/wex</a>.</p>
+        <div class="word-card">
+            <h3>PRAYER</h3>
+            <div class="def-everyday">
+                <p class="def-label">Everyday Definition:</p>
+                <p class="def-text">An address to God or a god, spoken or thought; an earnest request; the act of praying; a religious service made up chiefly of prayers.</p>
+            </div>
+            <div class="def-legal">
+                <p class="def-label">Legal Definition:</p>
+                <p class="def-text">A request for relief in a legal complaint. A special prayer asks for particular relief, while a general prayer asks for additional, unspecified relief.</p>
+            </div>
+        </div>
+
+        <div class="word-card">
+            <h3>CONVERSION</h3>
+            <div class="def-everyday">
+                <p class="def-label">Everyday Definition:</p>
+                <p class="def-text">A change from one form, use, or condition to another.</p>
+            </div>
+            <div class="def-legal">
+                <p class="def-label">Legal Definition:</p>
+                <p class="def-text">A civil wrong involving wrongful possession, control, or dominion over another person's personal property.</p>
+            </div>
+        </div>
+
+        <div class="word-card">
+            <h3>TENDER</h3>
+            <div class="def-everyday">
+                <p class="def-label">Everyday Definition:</p>
+                <p class="def-text">Gentle or soft; can also refer to an offer.</p>
+            </div>
+            <div class="def-legal">
+                <p class="def-label">Legal Definition:</p>
+                <p class="def-text">An unconditional offer to pay money or to perform what is owed.</p>
+            </div>
+        </div>
+
+        <div class="word-card">
+            <h3>INSTRUMENT</h3>
+            <div class="def-everyday">
+                <p class="def-label">Everyday Definition:</p>
+                <p class="def-text">A tool, device, or implement; also a musical device used to produce sound.</p>
+            </div>
+            <div class="def-legal">
+                <p class="def-label">Legal Definition:</p>
+                <p class="def-text">A formal legal document, such as a deed, will, promissory note, contract, or bond, that creates, records, or transfers rights or obligations.</p>
+            </div>
+        </div>
+
+        <div class="word-card">
+            <h3>SIT</h3>
+            <div class="def-everyday">
+                <p class="def-label">Everyday Definition:</p>
+                <p class="def-text">Resting in a seated position; staying in one place; being located somewhere.</p>
+            </div>
+            <div class="def-legal">
+                <p class="def-label">Legal Definition:</p>
+                <p class="def-text">Of a judge, to occupy a judicial seat, hold court, or perform official functions. Of a court or legislative body, to hold proceedings.</p>
+            </div>
+        </div>
+
+        <div class="word-card">
+            <h3>SHARP</h3>
+            <div class="def-everyday">
+                <p class="def-label">Everyday Definition:</p>
+                <p class="def-text">Having an edge; quick-witted; clearly defined.</p>
+            </div>
+            <div class="def-legal">
+                <p class="def-label">Legal Definition:</p>
+                <p class="def-text">A clause in a mortgage deed or similar instrument that allows the creditor to take immediate and summary action upon the debtor's default.</p>
+            </div>
+        </div>
+
+        <div class="word-card">
+            <h3>SHEER</h3>
+            <div class="def-everyday">
+                <p class="def-label">Everyday Definition:</p>
+                <p class="def-text">Very thin and see-through; complete or total; very steep.</p>
+            </div>
+            <div class="def-legal">
+                <p class="def-label">Legal Definition:</p>
+                <p class="def-text">In maritime law, a vessel's sudden deviation from its line of course &mdash; a swerve.</p>
+            </div>
+        </div>
+
+        <div class="word-card">
+            <h3>SHELVING</h3>
+            <div class="def-everyday">
+                <p class="def-label">Everyday Definition:</p>
+                <p class="def-text">The shelves themselves; material used to make shelves; sometimes a sloping surface.</p>
+            </div>
+            <div class="def-legal">
+                <p class="def-label">Legal Definition:</p>
+                <p class="def-text">In patent law, failing to begin commercial use, or stopping commercial use, of a patented product during the relevant period.</p>
+            </div>
+        </div>
+
+        <div class="word-card">
+            <h3>SERVE</h3>
+            <div class="def-everyday">
+                <p class="def-label">Everyday Definition:</p>
+                <p class="def-text">Helping, providing for, or performing a duty for someone; serving food; putting the ball in play in sports.</p>
+            </div>
+            <div class="def-legal">
+                <p class="def-label">Legal Definition:</p>
+                <p class="def-text">To make legal delivery of a notice or legal process, or to present a person with that notice or process as required by law.</p>
+            </div>
+        </div>
+
+        <div class="word-card">
+            <h3>SENTENCE</h3>
+            <div class="def-everyday">
+                <p class="def-label">Everyday Definition:</p>
+                <p class="def-text">A group of words that expresses a complete thought, usually with a subject and a verb.</p>
+            </div>
+            <div class="def-legal">
+                <p class="def-label">Legal Definition:</p>
+                <p class="def-text">In criminal procedure, the judgment a court formally pronounces after a finding of guilt, including the punishment imposed on the offender.</p>
+            </div>
+        </div>
+
+        <div class="word-card">
+            <h3>RELIEF</h3>
+            <div class="def-everyday">
+                <p class="def-label">Everyday Definition:</p>
+                <p class="def-text">The easing of pain, stress, or trouble; help given to people in need.</p>
+            </div>
+            <div class="def-legal">
+                <p class="def-label">Legal Definition:</p>
+                <p class="def-text">An heir's payment to a feudal lord for the privilege of succeeding to an ancestor's tenancy; also aid or assistance provided by the state.</p>
+            </div>
+        </div>
+
+        <!-- ============================== -->
+        <!-- WEEK 2 (placeholder) -->
+        <!-- ============================== -->
+        <!--
+        <h3 class="week-heading" id="week-2">Week 2</h3>
+
+        <div class="word-card">
+            <h3>YOUR WORD HERE</h3>
+            <div class="def-everyday">
+                <p class="def-label">Everyday Definition:</p>
+                <p class="def-text">Everyday meaning goes here.</p>
+            </div>
+            <div class="def-legal">
+                <p class="def-label">Legal Definition:</p>
+                <p class="def-text">Legal meaning goes here.</p>
+            </div>
+        </div>
+        -->
+
+        <!-- ============================== -->
+        <!-- WEEK 3 (placeholder) -->
+        <!-- ============================== -->
+        <!--
+        <h3 class="week-heading" id="week-3">Week 3</h3>
+        -->
+
+        <div class="bottom-note">
+            <p><strong>New words are added each week.</strong> Submit a word you've seen in your court papers in the comments on the YouTube episode, and it may appear here the following week. If you encounter a legal term you need to understand right now, check <a href="https://www.law.cornell.edu/wex" target="_blank" rel="noopener">Cornell Law Institute's legal encyclopedia</a> (free).</p>
         </div>
 
         <!-- HOW TO ADD NEW WORDS EACH WEEK:
-        
-        1. Add a new heading before the new words:
-           <h3 class="episode-words-heading">Episode 2</h3>
-        
-        2. Then add definition cards:
-           <div class="definition-card">
-               <h3>Your Term Here</h3>
-               <p>Plain language definition here.</p>
+
+        1. Uncomment and update the week heading:
+           <h3 class="week-heading" id="week-2">Week 2</h3>
+
+        2. Add word cards:
+           <div class="word-card">
+               <h3>YOUR WORD</h3>
+               <div class="def-everyday">
+                   <p class="def-label">Everyday Definition:</p>
+                   <p class="def-text">Everyday meaning here.</p>
+               </div>
+               <div class="def-legal">
+                   <p class="def-label">Legal Definition:</p>
+                   <p class="def-text">Legal meaning here.</p>
+               </div>
            </div>
         
         3. Repeat for each new word that week.
