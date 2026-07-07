@@ -10,10 +10,12 @@
             max-width: 800px;
             margin: 0 auto 2rem;
             padding: 2rem;
-            background: #f8f9fa;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
             border-radius: 8px;
             line-height: 1.8;
             font-size: 1.05rem;
+            color: var(--text-secondary);
         }
         .intro-section p {
             margin-bottom: 1.2rem;
@@ -22,46 +24,55 @@
             margin-bottom: 0;
         }
         .word-card {
-            background: #ffffff;
-            border: 1px solid #e0e0e0;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
             border-radius: 8px;
             padding: 1.5rem 2rem;
             margin-bottom: 1.5rem;
             max-width: 800px;
             margin-left: auto;
             margin-right: auto;
+            transition: border-color 0.2s ease;
+        }
+        .word-card:hover {
+            border-color: var(--accent);
         }
         .word-card h3 {
             font-size: 1.4rem;
-            color: #1a3a5c;
+            color: var(--accent);
             margin-bottom: 1rem;
-            border-bottom: 2px solid #1a3a5c;
+            border-bottom: 2px solid var(--accent);
             padding-bottom: 0.5rem;
         }
         .word-card .def-label {
             font-weight: bold;
-            color: #555;
+            color: var(--text-primary);
             margin-bottom: 0.3rem;
+        }
+        .word-card .def-text {
+            color: var(--text-secondary);
+            line-height: 1.6;
         }
         .word-card .def-everyday {
             margin-bottom: 1rem;
             padding-left: 1rem;
-            border-left: 3px solid #ccc;
+            border-left: 3px solid var(--text-muted);
         }
         .word-card .def-legal {
             padding-left: 1rem;
-            border-left: 3px solid #1a3a5c;
+            border-left: 3px solid var(--accent);
         }
         .week-nav {
             max-width: 800px;
             margin: 2rem auto;
             padding: 1.5rem 2rem;
-            background: #f0f4f8;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
             border-radius: 8px;
         }
         .week-nav h3 {
             margin-bottom: 1rem;
-            color: #1a3a5c;
+            color: var(--accent);
         }
         .week-nav ul {
             list-style: none;
@@ -71,21 +82,22 @@
             margin-bottom: 0.5rem;
         }
         .week-nav ul li a {
-            color: #1a3a5c;
+            color: var(--link);
             text-decoration: none;
             font-weight: bold;
             font-size: 1.1rem;
         }
         .week-nav ul li a:hover {
+            color: var(--link-hover);
             text-decoration: underline;
         }
         .week-nav ul li.coming-soon a {
-            color: #999;
+            color: var(--text-muted);
             pointer-events: none;
         }
         .week-nav ul li.coming-soon::after {
             content: " (coming soon)";
-            color: #999;
+            color: var(--text-muted);
             font-weight: normal;
             font-style: italic;
         }
@@ -93,9 +105,26 @@
             max-width: 800px;
             margin: 3rem auto 1.5rem;
             padding-bottom: 0.5rem;
-            border-bottom: 3px solid #1a3a5c;
+            border-bottom: 3px solid var(--accent);
             font-size: 1.5rem;
-            color: #1a3a5c;
+            color: var(--accent);
+        }
+        .bottom-note {
+            max-width: 800px;
+            margin: 3rem auto 0;
+            padding: 1.5rem;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            color: var(--text-secondary);
+        }
+        .bottom-note a {
+            color: var(--link);
+            text-decoration: none;
+        }
+        .bottom-note a:hover {
+            color: var(--link-hover);
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -153,11 +182,11 @@
             <h3>CAPACITY</h3>
             <div class="def-everyday">
                 <p class="def-label">Everyday Definition:</p>
-                <p>How much someone or something can do or hold; size or volume.</p>
+                <p class="def-text">How much someone or something can do or hold; size or volume.</p>
             </div>
             <div class="def-legal">
                 <p class="def-label">Legal Definition:</p>
-                <p>The legal ability or status to sue, be sued, contract, inherit, or act for another.</p>
+                <p class="def-text">The legal ability or status to sue, be sued, contract, inherit, or act for another.</p>
             </div>
         </div>
 
@@ -165,11 +194,11 @@
             <h3>PRAYER</h3>
             <div class="def-everyday">
                 <p class="def-label">Everyday Definition:</p>
-                <p>An address to God or a god, spoken or thought; an earnest request; the act of praying; a religious service made up chiefly of prayers.</p>
+                <p class="def-text">An address to God or a god, spoken or thought; an earnest request; the act of praying; a religious service made up chiefly of prayers.</p>
             </div>
             <div class="def-legal">
                 <p class="def-label">Legal Definition:</p>
-                <p>A request for relief in a legal complaint. A special prayer asks for particular relief, while a general prayer asks for additional, unspecified relief.</p>
+                <p class="def-text">A request for relief in a legal complaint. A special prayer asks for particular relief, while a general prayer asks for additional, unspecified relief.</p>
             </div>
         </div>
 
@@ -177,11 +206,11 @@
             <h3>CONVERSION</h3>
             <div class="def-everyday">
                 <p class="def-label">Everyday Definition:</p>
-                <p>A change from one form, use, or condition to another.</p>
+                <p class="def-text">A change from one form, use, or condition to another.</p>
             </div>
             <div class="def-legal">
                 <p class="def-label">Legal Definition:</p>
-                <p>A civil wrong involving wrongful possession, control, or dominion over another person's personal property.</p>
+                <p class="def-text">A civil wrong involving wrongful possession, control, or dominion over another person's personal property.</p>
             </div>
         </div>
 
@@ -189,11 +218,11 @@
             <h3>TENDER</h3>
             <div class="def-everyday">
                 <p class="def-label">Everyday Definition:</p>
-                <p>Gentle or soft; can also refer to an offer.</p>
+                <p class="def-text">Gentle or soft; can also refer to an offer.</p>
             </div>
             <div class="def-legal">
                 <p class="def-label">Legal Definition:</p>
-                <p>An unconditional offer to pay money or to perform what is owed.</p>
+                <p class="def-text">An unconditional offer to pay money or to perform what is owed.</p>
             </div>
         </div>
 
@@ -201,11 +230,11 @@
             <h3>INSTRUMENT</h3>
             <div class="def-everyday">
                 <p class="def-label">Everyday Definition:</p>
-                <p>A tool, device, or implement; also a musical device used to produce sound.</p>
+                <p class="def-text">A tool, device, or implement; also a musical device used to produce sound.</p>
             </div>
             <div class="def-legal">
                 <p class="def-label">Legal Definition:</p>
-                <p>A formal legal document, such as a deed, will, promissory note, contract, or bond, that creates, records, or transfers rights or obligations.</p>
+                <p class="def-text">A formal legal document, such as a deed, will, promissory note, contract, or bond, that creates, records, or transfers rights or obligations.</p>
             </div>
         </div>
 
@@ -213,11 +242,11 @@
             <h3>SIT</h3>
             <div class="def-everyday">
                 <p class="def-label">Everyday Definition:</p>
-                <p>Resting in a seated position; staying in one place; being located somewhere.</p>
+                <p class="def-text">Resting in a seated position; staying in one place; being located somewhere.</p>
             </div>
             <div class="def-legal">
                 <p class="def-label">Legal Definition:</p>
-                <p>Of a judge, to occupy a judicial seat, hold court, or perform official functions. Of a court or legislative body, to hold proceedings.</p>
+                <p class="def-text">Of a judge, to occupy a judicial seat, hold court, or perform official functions. Of a court or legislative body, to hold proceedings.</p>
             </div>
         </div>
 
@@ -225,11 +254,11 @@
             <h3>SHARP</h3>
             <div class="def-everyday">
                 <p class="def-label">Everyday Definition:</p>
-                <p>Having an edge; quick-witted; clearly defined.</p>
+                <p class="def-text">Having an edge; quick-witted; clearly defined.</p>
             </div>
             <div class="def-legal">
                 <p class="def-label">Legal Definition:</p>
-                <p>A clause in a mortgage deed or similar instrument that allows the creditor to take immediate and summary action upon the debtor's default.</p>
+                <p class="def-text">A clause in a mortgage deed or similar instrument that allows the creditor to take immediate and summary action upon the debtor's default.</p>
             </div>
         </div>
 
@@ -237,11 +266,11 @@
             <h3>SHEER</h3>
             <div class="def-everyday">
                 <p class="def-label">Everyday Definition:</p>
-                <p>Very thin and see-through; complete or total; very steep.</p>
+                <p class="def-text">Very thin and see-through; complete or total; very steep.</p>
             </div>
             <div class="def-legal">
                 <p class="def-label">Legal Definition:</p>
-                <p>In maritime law, a vessel's sudden deviation from its line of course &mdash; a swerve.</p>
+                <p class="def-text">In maritime law, a vessel's sudden deviation from its line of course &mdash; a swerve.</p>
             </div>
         </div>
 
@@ -249,11 +278,11 @@
             <h3>SHELVING</h3>
             <div class="def-everyday">
                 <p class="def-label">Everyday Definition:</p>
-                <p>The shelves themselves; material used to make shelves; sometimes a sloping surface.</p>
+                <p class="def-text">The shelves themselves; material used to make shelves; sometimes a sloping surface.</p>
             </div>
             <div class="def-legal">
                 <p class="def-label">Legal Definition:</p>
-                <p>In patent law, failing to begin commercial use, or stopping commercial use, of a patented product during the relevant period.</p>
+                <p class="def-text">In patent law, failing to begin commercial use, or stopping commercial use, of a patented product during the relevant period.</p>
             </div>
         </div>
 
@@ -261,11 +290,11 @@
             <h3>SERVE</h3>
             <div class="def-everyday">
                 <p class="def-label">Everyday Definition:</p>
-                <p>Helping, providing for, or performing a duty for someone; serving food; putting the ball in play in sports.</p>
+                <p class="def-text">Helping, providing for, or performing a duty for someone; serving food; putting the ball in play in sports.</p>
             </div>
             <div class="def-legal">
                 <p class="def-label">Legal Definition:</p>
-                <p>To make legal delivery of a notice or legal process, or to present a person with that notice or process as required by law.</p>
+                <p class="def-text">To make legal delivery of a notice or legal process, or to present a person with that notice or process as required by law.</p>
             </div>
         </div>
 
@@ -273,11 +302,11 @@
             <h3>SENTENCE</h3>
             <div class="def-everyday">
                 <p class="def-label">Everyday Definition:</p>
-                <p>A group of words that expresses a complete thought, usually with a subject and a verb.</p>
+                <p class="def-text">A group of words that expresses a complete thought, usually with a subject and a verb.</p>
             </div>
             <div class="def-legal">
                 <p class="def-label">Legal Definition:</p>
-                <p>In criminal procedure, the judgment a court formally pronounces after a finding of guilt, including the punishment imposed on the offender.</p>
+                <p class="def-text">In criminal procedure, the judgment a court formally pronounces after a finding of guilt, including the punishment imposed on the offender.</p>
             </div>
         </div>
 
@@ -285,11 +314,11 @@
             <h3>RELIEF</h3>
             <div class="def-everyday">
                 <p class="def-label">Everyday Definition:</p>
-                <p>The easing of pain, stress, or trouble; help given to people in need.</p>
+                <p class="def-text">The easing of pain, stress, or trouble; help given to people in need.</p>
             </div>
             <div class="def-legal">
                 <p class="def-label">Legal Definition:</p>
-                <p>An heir's payment to a feudal lord for the privilege of succeeding to an ancestor's tenancy; also aid or assistance provided by the state.</p>
+                <p class="def-text">An heir's payment to a feudal lord for the privilege of succeeding to an ancestor's tenancy; also aid or assistance provided by the state.</p>
             </div>
         </div>
 
@@ -303,11 +332,11 @@
             <h3>YOUR WORD HERE</h3>
             <div class="def-everyday">
                 <p class="def-label">Everyday Definition:</p>
-                <p>Everyday meaning goes here.</p>
+                <p class="def-text">Everyday meaning goes here.</p>
             </div>
             <div class="def-legal">
                 <p class="def-label">Legal Definition:</p>
-                <p>Legal meaning goes here.</p>
+                <p class="def-text">Legal meaning goes here.</p>
             </div>
         </div>
         -->
@@ -319,7 +348,7 @@
         <h3 class="week-heading" id="week-3">Week 3</h3>
         -->
 
-        <div class="disclaimer" style="margin-top: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+        <div class="bottom-note">
             <p><strong>New words are added each week.</strong> Submit a word you've seen in your court papers in the comments on the YouTube episode, and it may appear here the following week. If you encounter a legal term you need to understand right now, check <a href="https://www.law.cornell.edu/wex" target="_blank" rel="noopener">Cornell Law Institute's legal encyclopedia</a> (free).</p>
         </div>
 
@@ -333,11 +362,11 @@
                <h3>YOUR WORD</h3>
                <div class="def-everyday">
                    <p class="def-label">Everyday Definition:</p>
-                   <p>Everyday meaning here.</p>
+                   <p class="def-text">Everyday meaning here.</p>
                </div>
                <div class="def-legal">
                    <p class="def-label">Legal Definition:</p>
-                   <p>Legal meaning here.</p>
+                   <p class="def-text">Legal meaning here.</p>
                </div>
            </div>
 
