@@ -370,7 +370,7 @@ const episodeData = {
         ],
         links: [
             { name: "MDEC Public Info", url: "https://mdcourts.gov/mdec/efilingpublic" },
-            { name: "Access to Court Records (Party Access / MDJ-004)", url: "https://www.mdcourts.gov/legalhelp/courtrecords" },
+            { name: "MDJ-004 Party Access Form", url: "https://www.courts.state.md.us/sites/default/files/court-forms/district/forms/mdj/mdj004.pdf/mdj004.pdf" },
             { name: "Maryland CaseSearch", url: "https://casesearch.courts.state.md.us/casesearch/" },
             { name: "MDEC Portal", url: "https://mdecportal.courts.state.md.us/MDODYSSEYPORTAL" }
         ]
