@@ -164,6 +164,34 @@ header {
     margin: 0 auto;
 }
 
+.wotd-intro {
+    max-width: 800px;
+    margin: 0 auto 2.5rem;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.wotd-intro p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.wotd-intro p:last-child {
+    margin-bottom: 0;
+}
+
+.wotd-intro .wotd-cta {
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
+}
+
 .episode-words-heading {
     color: var(--accent);
     font-size: 1.3rem;
@@ -210,6 +238,105 @@ header {
 .definition-card p a:hover {
     color: var(--link-hover);
     text-decoration: underline;
+}
+
+/* Definition row - everyday vs legal */
+.def-row {
+    margin-bottom: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+.def-row:last-child {
+    margin-bottom: 0;
+}
+
+.def-row p {
+    display: inline;
+}
+
+.def-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0.2rem 0.6rem;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+.def-label.everyday {
+    background: rgba(93, 173, 226, 0.15);
+    color: var(--link);
+    border: 1px solid rgba(93, 173, 226, 0.3);
+}
+
+.def-label.legal {
+    background: rgba(201, 162, 39, 0.15);
+    color: var(--accent);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+}
+
+/* Weekly archive */
+.weekly-archive {
+    max-width: 800px;
+    margin: 3rem auto 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.archive-description {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.week-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.week-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.week-link:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: rgba(201, 162, 39, 0.08);
+}
+
+.week-link.active {
+    color: var(--accent);
+    border-color: var(--accent);
+    background: rgba(201, 162, 39, 0.12);
+}
+
+.week-section {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.week-heading {
+    color: var(--accent);
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--accent);
+}
+
+.week-note {
+    color: var(--text-muted);
+    font-style: italic;
+    font-size: 0.95rem;
 }
 
 /* === EPISODE CONTENT === */
