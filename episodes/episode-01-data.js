@@ -224,9 +224,9 @@ const episodeData = {
             "Ask for the register of actions, pleadings, orders, judgments, and nonrestricted filed exhibits."
         ],
         links: [
-            { name: "Idaho iCourt Portal", url: "https://icourt.idaho.gov/portal" },
+            { name: "Idaho iCourt Portal", url: "https://mycourts.idaho.gov/" },
             { name: "Idaho File & Serve", url: "https://efileid.tylertech.cloud/OfsEfsp/ui/landing" },
-            { name: "Idaho Self-Help", url: "https://isc.idaho.gov/main/selfhelp" }
+            { name: "Idaho Self-Help", url: "https://isc.idaho.gov/self-help" }
         ]
     },
     "IL": {
@@ -299,7 +299,7 @@ const episodeData = {
         links: [
             { name: "Kansas Public Access Portal", url: "https://prodportal.kscourts.gov/ProdPortal/" },
             { name: "Kansas eFiling", url: "https://www.kscourts.gov/eCourt/Kansas-Courts-eFiling" },
-            { name: "Kansas Court Resources", url: "https://www.kscourts.gov/Public/Court-Resources" }
+            { name: "Kansas Court Resources", url: "https://www.kscourts.gov/Public" }
         ]
     },
     "KY": {
@@ -316,7 +316,7 @@ const episodeData = {
         ],
         links: [
             { name: "Kentucky Courts", url: "https://www.kycourts.gov/" },
-            { name: "Kentucky eFiling", url: "https://www.kycourts.gov/Pages/efiling.aspx" },
+            { name: "Kentucky eFiling", url: "https://www.kycourts.gov/AOC/Information-and-Technology/Pages/File_Serve(eFiling).aspx/" },
             { name: "Kentucky Legal Help", url: "https://www.kycourts.gov/Legal-Help/Pages/default.aspx" }
         ]
     },
@@ -370,7 +370,7 @@ const episodeData = {
         ],
         links: [
             { name: "MDEC Public Info", url: "https://mdcourts.gov/mdec/efilingpublic" },
-            { name: "MDJ-004 Party Access Form", url: "https://mdcourts.gov/sites/default/files/court-forms/mdj004.pdf" },
+            { name: "Access to Court Records (Party Access / MDJ-004)", url: "https://www.mdcourts.gov/legalhelp/courtrecords" },
             { name: "Maryland CaseSearch", url: "https://casesearch.courts.state.md.us/casesearch/" },
             { name: "MDEC Portal", url: "https://mdecportal.courts.state.md.us/MDODYSSEYPORTAL" }
         ]
@@ -407,7 +407,7 @@ const episodeData = {
         ],
         links: [
             { name: "MiFILE", url: "https://mifile.courts.michigan.gov/" },
-            { name: "Michigan Court Directory", url: "https://www.courts.michigan.gov/courts/court-directory/" },
+            { name: "Michigan Court Directory", url: "https://courts.michigan.gov/courts" },
             { name: "Michigan Legal Help e-Filing", url: "https://michiganlegalhelp.org/self-help-tools/e-filing" }
         ]
     },
@@ -515,7 +515,7 @@ const episodeData = {
         ],
         links: [
             { name: "eFileNV", url: "https://nevada.tylertech.cloud/ofsweb" },
-            { name: "Nevada Self-Help", url: "https://www.nvcourts.gov/programs/self_help" },
+            { name: "Nevada Self-Help", url: "https://selfhelp.nvcourts.gov/" },
             { name: "Nevada Courts", url: "https://www.nvcourts.gov/" }
         ]
     },
@@ -640,7 +640,7 @@ const episodeData = {
             "For certified copies, follow that county clerk's copy/certification process."
         ],
         links: [
-            { name: "Ohio Self-Represented Resources", url: "https://www.supremecourt.ohio.gov/courts/services-to-courts/self-represented/" },
+            { name: "Ohio Self-Represented Resources", url: "https://www.supremecourt.ohio.gov/courts/services-to-courts/court-services/access-to-justice-resources/" },
             { name: "Ohio Court of Claims eFileOH", url: "https://www.efileoh.com/" }
         ]
     },
@@ -712,7 +712,7 @@ const episodeData = {
         links: [
             { name: "RI Public Portal", url: "https://publicportal.courts.ri.gov/PublicPortal/" },
             { name: "RI File & Serve", url: "https://rhodeisland.tylertech.cloud/ofsweb" },
-            { name: "Representing Yourself in RI", url: "https://www.courts.ri.gov/PublicResources/Pages/Representing-Yourself.aspx" }
+            { name: "Representing Yourself in RI", url: "https://www.courts.ri.gov/Public-Resources/Pages/default.aspx" }
         ]
     },
     "SC": {
@@ -749,7 +749,7 @@ const episodeData = {
             { name: "South Dakota Cases and Records", url: "https://ujs.sd.gov/cases-and-records/" },
             { name: "eCourts", url: "https://ecourts.sd.gov/" },
             { name: "PARS", url: "https://ujspars.sd.gov/" },
-            { name: "South Dakota Forms", url: "https://ujs.sd.gov/Forms/" }
+            { name: "South Dakota Forms", url: "https://ujs.sd.gov/form-file-search/" }
         ]
     },
     "TN": {
@@ -785,7 +785,7 @@ const episodeData = {
         links: [
             { name: "eFileTexas", url: "https://efile.txcourts.gov/" },
             { name: "re:SearchTX", url: "https://research.txcourts.gov/" },
-            { name: "Texas Legal Self-Help", url: "https://www.txcourts.gov/programs-services/legal-self-help/" }
+            { name: "Texas Legal Self-Help", url: "https://www.txcourts.gov/programs-services/self-help/" }
         ]
     },
     "UT": {
@@ -821,7 +821,7 @@ const episodeData = {
         links: [
             { name: "Vermont Public Portal", url: "https://www.vtcourts.gov/about-vermont-judiciary/public-portal" },
             { name: "Vermont eFiling", url: "https://www.vtcourts.gov/about-vermont-judiciary/electronic-access/electronic-filing" },
-            { name: "Vermont Forms", url: "https://www.vermontjudiciary.org/about-vermont-judiciary/court-forms" }
+            { name: "Vermont Forms", url: "https://www.vermontjudiciary.org/court-forms" }
         ]
     },
     "VA": {
@@ -839,7 +839,7 @@ const episodeData = {
         links: [
             { name: "Virginia Online Case Information", url: "https://www.vacourts.gov/caseinfo/home.html" },
             { name: "OCRA", url: "https://cisweb.courts.state.va.us/Ocra/" },
-            { name: "Virginia Self-Help", url: "https://www.vacourts.gov/self-help/home.html" }
+            { name: "Virginia Self-Help", url: "https://selfhelp.vacourts.gov/" }
         ]
     },
     "WA": {
@@ -873,9 +873,9 @@ const episodeData = {
             "If records are not digital, ask for counter inspection, public terminal access, mailed copies, or certified copies."
         ],
         links: [
-            { name: "West Virginia Court Records", url: "https://www.courtswv.gov/court-records" },
+            { name: "West Virginia Court Records", url: "https://www.courtswv.gov/court-record-access" },
             { name: "West Virginia Judiciary", url: "https://www.courtswv.gov/" },
-            { name: "Court Information by County", url: "https://www.courtswv.gov/public-resources/court-information-by-county" }
+            { name: "Court Information by County", url: "https://www.courtswv.gov/public-resources/court-information-by-county.html" }
         ]
     },
     "WI": {
@@ -910,8 +910,8 @@ const episodeData = {
         ],
         links: [
             { name: "Wyoming Public Case Search", url: "https://efiling.courts.state.wy.us/public/caseSearch.do" },
-            { name: "Wyoming eFiling", url: "https://www.courts.state.wy.us/efiling/" },
-            { name: "Wyoming Representing Yourself", url: "https://www.courts.state.wy.us/representing-yourself/" }
+            { name: "Wyoming eFiling", url: "https://www.wyocourts.gov/efiling/" },
+            { name: "Wyoming Representing Yourself", url: "https://www.wyocourts.gov/self-help-forms/" }
         ]
     },
     "DC": {
@@ -928,8 +928,8 @@ const episodeData = {
         ],
         links: [
             { name: "DC Courts Case Search", url: "https://www.dccourts.gov/court-resources/search-cases" },
-            { name: "DC Courts eFiling", url: "https://www.dccourts.gov/services/efiling" },
-            { name: "DC Legal Assistance", url: "https://www.dccourts.gov/services/legal-assistance" }
+            { name: "DC Courts eFiling", url: "https://www.dccourts.gov/superior-court/file-online-efiling" },
+            { name: "DC Legal Assistance / Represent Yourself", url: "https://www.dccourts.gov/services/represent-yourself" }
         ]
     }
 };
