@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pro Se Companion - Official Court & Self-Help Resource Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>The Pro Se Companion</h1>
+            <p class="subtitle">Official Court & Self-Help Resource Directory</p>
+            <p class="tagline">Find official court websites, self-help resources, e-filing portals, free legal research tools, and legal aid resources in one place.</p>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-link active">Court Directory & Links</a>
+            <a href="episodes/index.html" class="nav-link">Episodes</a>
+            <a href="legal-definitions.html" class="nav-link">Word of the Day</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Important Notice -->
+        <div class="disclaimer top-disclaimer">
+            <p><strong>Important:</strong> Laws, rules, deadlines, filing procedures, and court forms vary by state and change over time. Always verify information directly with the official court website for your state before filing anything.</p>
+        </div>
+
+        <!-- Interactive Map -->
+        <section class="map-section" id="map-section">
+            <div class="map-container" id="map-container">
+                <!-- SVG map will be loaded here -->
+            </div>
+            <p class="map-instruction">Click on a state to view its resources, or scroll down for the full directory</p>
+        </section>
+
+        <section class="state-panel" id="state-panel">
+            <button class="back-btn" id="back-btn">&larr; Back to Map</button>
+            <div class="state-header" id="state-header">
+                <h2 id="state-name"></h2>
+            </div>
+            <div class="resources-grid" id="resources-grid"></div>
+        </section>
+
+        <!-- Full State Court Directory Table -->
+        <section class="directory-section" id="directory">
+            <h2 class="section-title">Official State Court Websites</h2>
+            <div class="directory-table-wrap">
+                <table class="directory-table">
+                    <thead>
+                        <tr>
+                            <th>State</th>
+                            <th>Official Court Resources</th>
+                        </tr>
+                    </thead>
+                    <tbody id="state-directory-tbody">
+                        <!-- Populated by JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Federal Court Resources -->
+        <section class="directory-section" id="federal">
+            <h2 class="section-title">Federal Court Resources</h2>
+            <div class="directory-table-wrap">
+                <table class="directory-table">
+                    <tbody>
+                        <tr><td>U.S. Courts Main Site</td><td><a href="https://www.uscourts.gov/" target="_blank" rel="noopener">Open site</a></td></tr>
+                        <tr><td>Federal Court Locator</td><td><a href="https://www.uscourts.gov/about-federal-courts/federal-courts-public/court-website-links" target="_blank" rel="noopener">Find your federal district court</a></td></tr>
+                        <tr><td>Federal Pro Se Forms</td><td><a href="https://www.uscourts.gov/forms/pro-se-forms" target="_blank" rel="noopener">Open forms</a></td></tr>
+                        <tr><td>Federal Rules of Civil Procedure</td><td><a href="https://www.law.cornell.edu/rules/frcp" target="_blank" rel="noopener">Open rules</a></td></tr>
+                        <tr><td>Federal Rules of Criminal Procedure</td><td><a href="https://www.law.cornell.edu/rules/frcrmp" target="_blank" rel="noopener">Open rules</a></td></tr>
+                        <tr><td>Federal Rules of Appellate Procedure</td><td><a href="https://www.law.cornell.edu/rules/frap" target="_blank" rel="noopener">Open rules</a></td></tr>
+                        <tr><td>Federal Rules of Evidence</td><td><a href="https://www.law.cornell.edu/rules/fre" target="_blank" rel="noopener">Open rules</a></td></tr>
+                        <tr><td>Supreme Court of the United States</td><td><a href="https://www.supremecourt.gov/" target="_blank" rel="noopener">Main site</a> | <a href="https://www.supremecourt.gov/filingandrules/rules_guidance.aspx" target="_blank" rel="noopener">Rules and guidance</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Free Legal Research Tools -->
+        <section class="directory-section" id="research">
+            <h2 class="section-title">Free Legal Research Tools</h2>
+            <div class="directory-table-wrap">
+                <table class="directory-table">
+                    <tbody>
+                        <tr><td>CourtListener</td><td><a href="https://www.courtlistener.com/" target="_blank" rel="noopener">Free case law, dockets, and oral arguments</a></td></tr>
+                        <tr><td>Google Scholar</td><td><a href="https://scholar.google.com/" target="_blank" rel="noopener">Search case law for free</a></td></tr>
+                        <tr><td>Cornell Legal Information Institute</td><td><a href="https://www.law.cornell.edu/" target="_blank" rel="noopener">Federal statutes, rules, and legal materials</a></td></tr>
+                        <tr><td>FindLaw</td><td><a href="https://www.findlaw.com/" target="_blank" rel="noopener">Free legal information by topic</a></td></tr>
+                        <tr><td>Justia</td><td><a href="https://www.justia.com/" target="_blank" rel="noopener">Case law, statutes, and legal information</a></td></tr>
+                        <tr><td>Nolo</td><td><a href="https://www.nolo.com/" target="_blank" rel="noopener">Plain-language legal guides</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Need a Lawyer -->
+        <section class="directory-section" id="legal-aid">
+            <h2 class="section-title">Need a Lawyer But Cannot Afford One?</h2>
+            <div class="directory-table-wrap">
+                <table class="directory-table">
+                    <tbody>
+                        <tr><td>Legal Services Corporation</td><td><a href="https://www.lsc.gov/about-lsc/what-legal-aid/get-legal-help" target="_blank" rel="noopener">Find local legal aid</a></td></tr>
+                        <tr><td>LawHelp.org</td><td><a href="https://www.lawhelp.org/" target="_blank" rel="noopener">Find free legal help near you</a></td></tr>
+                        <tr><td>ABA Free Legal Answers</td><td><a href="https://abafreelegalanswers.org/" target="_blank" rel="noopener">Free legal advice online</a></td></tr>
+                        <tr><td>National Legal Aid & Defender Association</td><td><a href="https://www.nlada.org/" target="_blank" rel="noopener">Legal aid and defender resources</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Disclaimer -->
+        <section class="directory-section" id="disclaimer-section">
+            <h2 class="section-title">Disclaimer</h2>
+            <div class="disclaimer-full">
+                <p>The Pro Se Companion is an educational channel. The creator is not a lawyer and does not provide legal advice. This directory is provided for informational purposes only to help self-represented litigants locate official court resources and free legal information.</p>
+                <p>No attorney-client relationship is created by visiting this page or watching The Pro Se Companion.</p>
+                <p>External links may change without notice. Always verify rules, forms, procedures, and deadlines directly with the official court website or a licensed attorney in your jurisdiction.</p>
+                <p><strong>Last updated:</strong> July 7, 2025.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>The Pro Se Companion &copy; 2025 | A free public resource.</p>
+        <p>All links direct to official government websites. No legal advice is provided.</p>
+    </footer>
+
+    <script src="state-data.js"></script>
+    <script src="us-map.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Episode 1: Access Your Case Files - The Pro Se Companion</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>The Pro Se Companion</h1>
+            <p class="subtitle">Episode 1</p>
+        </div>
+        <nav class="main-nav">
+            <a href="../index.html" class="nav-link">Court Directory & Links</a>
+            <a href="index.html" class="nav-link active">Episodes</a>
+            <a href="../legal-definitions.html" class="nav-link">Word of the Day</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="episode-intro">
+            <p class="episode-num">Episode 1</p>
+            <h2>How to Access Your Case Files Online</h2>
+            <p>If you are a party to a case, you have the right to view the documents filed in your case. Every state court system has an online portal where you can look up your case, view filings, check hearing dates, and see what motions have been submitted. The name of the system varies by state &mdash; Maryland calls it "Party Access," other states call it Case Search, eCourts, Odyssey, or something else entirely.</p>
+            <p>Click your state below to see exactly how to access your case files, what the system is called, and step-by-step instructions.</p>
+        </div>
+
+        <section class="map-section" id="map-section">
+            <div class="map-container" id="map-container">
+                <!-- SVG map will be loaded here -->
+            </div>
+            <p class="map-instruction">Click on your state to see how to access your case files</p>
+        </section>
+
+        <section class="state-panel" id="state-panel">
+            <button class="back-btn" id="back-btn">&larr; Back to Map</button>
+            <div class="state-header" id="state-header">
+                <h2 id="state-name"></h2>
+            </div>
+            <div id="state-content">
+                <!-- State-specific content will be populated by JS -->
+            </div>
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> This site provides links to official government resources for informational purposes only. 
+                Court systems update their websites periodically. If a link does not work, search your state court system's main website for "case search" or "party access." This is not legal advice.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>The Pro Se Companion &copy; 2025 | A free public resource.</p>
+        <p>All links direct to official government websites. No legal advice is provided.</p>
+    </footer>
+
+    <script src="episode-01-data.js"></script>
+    <script src="../us-map.js"></script>
+    <script src="episode-app.js"></script>
+</body>
+</html>
