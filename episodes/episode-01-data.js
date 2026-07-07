@@ -1,857 +1,935 @@
-// Episode 1: How to Access Your Case Files Online
-// State-by-state party access / case search systems
+// Episode 1: How to Access Your Case Files as a Party
+// Framing: not "does the state have e-access," but "what door does a party use
+// to reach the official court record" — online, at the courthouse, by clerk
+// request, by copy request, or by motion if access is denied.
+//
+// Universal party request wording (use in every state):
+//   "I am a self-represented party in Case No. ____. Please confirm that I am
+//   listed as a party of record and tell me how to access the official court
+//   file and current docket. I request access to inspect or obtain copies of all
+//   nonrestricted docket entries, pleadings, motions, responses, notices, orders,
+//   judgments, minute entries, filed attachments, and nonrestricted exhibits. I am
+//   not requesting sealed, confidential, juvenile, victim-protected, informant-
+//   protected, or otherwise restricted material. If any item is withheld or
+//   redacted, please identify the legal basis and whether a redacted copy is
+//   available."
+
 const episodeData = {
     "AL": {
         name: "Alabama",
-        systemName: "Alacourt.com",
-        description: "Alabama uses Alacourt as its statewide electronic case management system. Parties can search for their cases and view filed documents through the public portal. Some counties also provide access through individual circuit clerk websites.",
+        systemName: "AlaFile / Alacourt (Just One Look)",
+        description: "As an Alabama party, confirm the court record lists you as a party of record, then use AlaFile for digital access or request the official court file from the circuit or district clerk. Portals like Alacourt (Just One Look) mainly surface case information, so the clerk of the court where the case is filed is the reliable fallback for the full file.",
         steps: [
-            "Go to the Alabama Alacourt website.",
-            "Select your county from the dropdown menu.",
-            "Search by your name or case number.",
-            "View your case details, filing dates, and scheduled hearings.",
-            "For document copies, you may need to contact the circuit clerk's office or visit in person."
+            "Confirm the court record shows you as a party of record or pro se party.",
+            "For digital access, register through AlaFile as a pro se/self-represented user if your case type allows it.",
+            "If you already have a case, contact the circuit or district clerk and ask whether your AlaFile account can be associated with the existing case.",
+            "For the official court file, request access from the clerk of the court where the case is filed.",
+            "If documents are not available online, ask to inspect the file in person, use the public terminal, or request copies by mail/email if that clerk allows it.",
+            "Ask for the case action summary/docket, pleadings, motions, orders, notices, judgments, and nonrestricted filed exhibits."
         ],
         links: [
-            { name: "Alacourt.com - Case Search", url: "https://v2.alacourt.com/" },
-            { name: "Alabama Judicial System", url: "https://judicial.alabama.gov/" },
-            { name: "Find Your County Circuit Clerk", url: "https://judicial.alabama.gov/library/courts" }
+            { name: "AlaFile", url: "https://efile.alacourt.gov/" },
+            { name: "Alacourt / Just One Look", url: "https://pa.alacourt.com/" },
+            { name: "Alabama Court Forms", url: "https://eforms.alacourt.gov/" }
         ]
     },
     "AK": {
         name: "Alaska",
-        systemName: "CourtView",
-        description: "Alaska provides CourtView, a free public access system where anyone can look up court cases. As a party, you can find your case, see all filings, and check hearing schedules. The system covers all Alaska courts statewide.",
+        systemName: "CourtView / TrueFiling",
+        description: "In Alaska, confirm the case is in the state court system and that you are a listed party. CourtView helps you locate the case, but it is not the full official file. If online access is incomplete, submit a records request to the clerk of the court where the case is filed.",
         steps: [
-            "Go to Alaska CourtView online.",
-            "Choose to search by name, case number, or attorney.",
-            "Enter your search details and select the court location.",
-            "Click on your case to view the case history, filings, and upcoming events.",
-            "Documents may be available for viewing or you may need to request copies from the clerk."
+            "Confirm the case is in the Alaska state court system and that you are listed as a party.",
+            "Use CourtView/search to locate the case, but do not assume it is the full official file.",
+            "If the case is eligible for TrueFiling, register and ask the clerk how to connect your account to the case.",
+            "If online access is unavailable or incomplete, submit a records request to the clerk of the court where the case is filed.",
+            "Ask for inspection, copies, audio records, docket entries, pleadings, orders, and nonrestricted exhibits.",
+            "For confidential case types, expect to show ID and prove party status."
         ],
         links: [
-            { name: "Alaska CourtView - Case Search", url: "https://records.courts.alaska.gov/eaccess/home.page.2" },
-            { name: "Alaska Court System - Self-Help", url: "https://courts.alaska.gov/shc/index.htm" }
+            { name: "Alaska Search Cases", url: "https://courts.alaska.gov/main/search-cases.htm" },
+            { name: "Alaska TrueFiling", url: "https://courts.alaska.gov/efile/index.htm" },
+            { name: "Alaska Court Forms", url: "https://courts.alaska.gov/forms/index.htm" }
         ]
     },
     "AZ": {
         name: "Arizona",
-        systemName: "AZTurboCourt / County Portals",
-        description: "Arizona does not have a single statewide case access portal. Each county operates its own system. Maricopa County uses eCourt, Pima uses the Consolidated Justice Court system, etc. As a party, you access your case through your specific county's court website.",
+        systemName: "eAccess / County Clerk Portals",
+        description: "Arizona has no single statewide file portal. Identify the court level (Superior, Justice, Municipal, appellate, or federal), confirm you are a party of record, and try eAccess for many Superior Court cases. For family, probate, juvenile, sealed, restricted, or older records, go directly to the county clerk.",
         steps: [
-            "Identify which county your case is filed in.",
-            "Go to that county's Superior Court website.",
-            "Look for 'Case Search,' 'Public Access,' or 'eCourt' on their website.",
-            "Search by your name or case number.",
-            "View case details, filed documents, and hearing dates."
+            "Identify whether the case is Superior Court, Justice Court, Municipal Court, appellate, or federal.",
+            "Confirm you are listed as a party/participant of record.",
+            "For many Superior Court civil/criminal cases, try eAccess.",
+            "For family, probate, juvenile, sealed, restricted, or older records, contact the county clerk directly.",
+            "Justice and Municipal Court records must be requested from the specific court that heard the case.",
+            "Ask for the docket, minute entries, pleadings, motions, orders, judgments, and nonrestricted exhibits under Arizona court-record access rules."
         ],
         links: [
-            { name: "Maricopa County - eCourt Public Access", url: "https://www.superiorcourt.maricopa.gov/docket/" },
-            { name: "Pima County - Case Search", url: "https://www.agave.cosc.pima.gov/" },
-            { name: "Arizona Courts - Find Your Court", url: "https://www.azcourts.gov/AZ-Courts/Find-a-Court" }
+            { name: "Arizona Case Search", url: "https://apps.supremecourt.az.gov/publicaccess/caselookup.aspx" },
+            { name: "Arizona eAccess", url: "https://www.azcourts.gov/eaccess" },
+            { name: "Arizona Superior Court Clerks", url: "https://www.azcourts.gov/AZ-Courts/Superior-Court/Clerk-of-Superior-Court" }
         ]
     },
     "AR": {
         name: "Arkansas",
         systemName: "CourtConnect",
-        description: "Arkansas uses CourtConnect, a free online system where parties can search for and view their court cases. It covers circuit courts statewide and lets you see filings, hearing dates, and case status.",
+        description: "Arkansas parties can search cases through CourtConnect, but the circuit or district court clerk holds the official file. Confirm you are a named party (or file a pro se appearance), then request the docket sheet and the official court file from the clerk.",
         steps: [
-            "Go to Arkansas CourtConnect.",
-            "Select 'Circuit' for the court type.",
-            "Choose your county.",
-            "Search by name or case number.",
-            "View your case details including all filings and scheduled hearings."
+            "Search the case through CourtConnect if available.",
+            "Confirm you are a named party or have filed a pro se appearance/notice if needed.",
+            "Contact the circuit clerk or district court clerk where the case is pending.",
+            "Request the docket sheet and the official court file.",
+            "If documents are not online, request in-person inspection, copies, or certified copies from the clerk.",
+            "Ask the clerk to identify any sealed, juvenile, adoption, victim-protected, or confidential restrictions."
         ],
         links: [
             { name: "Arkansas CourtConnect", url: "https://caseinfo.arcourts.gov/cconnect/PROD/public/ck_public_qry_main.cp_main_idx" },
             { name: "Arkansas Judiciary", url: "https://www.arcourts.gov/" }
         ]
     },
-
     "CA": {
         name: "California",
         systemName: "County Superior Court Portals",
-        description: "California does not have a single statewide case access system. Each county Superior Court operates its own online portal. Los Angeles, San Francisco, and other large counties have robust online systems. As a party, you use your county's specific portal to access your case.",
+        description: "California is county-based. Identify the county Superior Court, search its portal if available, and confirm the record lists you as a party. Some counties offer online party access; others require clerk access or courthouse terminals, and restricted records may need a motion to inspect.",
         steps: [
-            "Identify which county your case is in.",
-            "Go to that county's Superior Court website.",
-            "Look for 'Online Services,' 'Case Access,' or 'Case Search.'",
-            "Create an account if required (some counties require registration for full access).",
-            "Search by your case number or name to view filings, hearing dates, and documents."
+            "California is county-based, so first identify the county Superior Court.",
+            "Search that county's case portal if available.",
+            "Confirm the court record lists you as a party or self-represented party.",
+            "Some counties offer online party access; others require clerk access or courthouse terminals.",
+            "If no digital access is available, request inspection/copies from the clerk or records division.",
+            "For restricted records, ask whether party access, redacted copies, or a motion to inspect is required."
         ],
         links: [
-            { name: "Los Angeles Superior Court - Case Access", url: "https://www.lacourt.org/casesummary/ui/" },
-            { name: "San Diego Superior Court - Case Search", url: "https://www.sdcourt.ca.gov/sdcourt/civil2/caseinformation" },
-            { name: "California Courts - Find Your Court", url: "https://www.courts.ca.gov/find-my-court.htm" }
+            { name: "Find My Court", url: "https://courts.ca.gov/find-my-court.htm" },
+            { name: "Viewing Electronic Court Records", url: "https://courts.ca.gov/42512.htm" }
         ]
     },
     "CO": {
         name: "Colorado",
-        systemName: "Colorado Courts E-Filing / Case Search",
-        description: "Colorado Judicial Branch provides a statewide case search system. Parties can look up cases across all Colorado courts. For full document access, registered e-filing users may have additional access to view filed documents online.",
+        systemName: "Colorado Court Records Search / E-Filing",
+        description: "In Colorado, identify the county and court and confirm your party status and current service information. Use the court record search for docket access, and if the full file is not online, ask the clerk of court whether parties can inspect the electronic file at a courthouse terminal.",
         steps: [
-            "Go to the Colorado Judicial Branch case search page.",
-            "Search by case number, party name, or attorney name.",
-            "Select your case from the results.",
-            "View docket entries, hearing dates, and case status.",
-            "For full document access, register on the Colorado Courts E-Filing system."
+            "Identify the county and court.",
+            "Confirm your party status and current address/service information.",
+            "Use Colorado court record search tools for docket access where available.",
+            "If the full file is not online, contact the clerk of court for that county.",
+            "Ask whether parties can inspect the electronic file at a courthouse terminal.",
+            "Request copies of pleadings, motions, orders, minute entries, judgments, and nonrestricted exhibits."
         ],
         links: [
-            { name: "Colorado Courts - Case Search", url: "https://www.courts.state.co.us/dockets/index.cfm" },
-            { name: "Colorado Courts E-Filing", url: "https://www.courts.state.co.us/Administration/Section.cfm?Section=efiling" },
-            { name: "Colorado Self-Help Center", url: "https://www.courts.state.co.us/Self_Help/index.cfm" }
+            { name: "Colorado Court Records", url: "https://www.courts.state.co.us/Courts/Records/Choose.cfm" },
+            { name: "Colorado Self-Help", url: "https://www.courts.state.co.us/Self_Help/Index.cfm" },
+            { name: "Colorado E-Filing", url: "https://www.jbits.courts.state.co.us/efiling/web/login.htm" }
         ]
     },
     "CT": {
         name: "Connecticut",
-        systemName: "Civil/Family Case Look-Up",
-        description: "Connecticut Judicial Branch provides an online case look-up system for civil and family cases. Parties can search by name, case number, or return date. Criminal case information is available through a separate system.",
+        systemName: "Judicial Branch E-Services / Case Look-Up",
+        description: "Connecticut self-represented parties should file or confirm their appearance and can register for E-Services. The public case look-up shows docket information; for documents not available digitally, contact the clerk's office where the case is pending.",
         steps: [
-            "Go to the Connecticut Judicial Branch case look-up page.",
-            "Choose the case type (civil, family, housing, or small claims).",
-            "Search by party name, case number, or return date.",
-            "View case details, filed motions, and hearing schedule.",
-            "For document copies, contact the clerk's office at your courthouse."
+            "File or confirm your appearance if you are self-represented.",
+            "Register for Connecticut Judicial Branch E-Services if the case type allows it.",
+            "Use the public case lookup for docket information.",
+            "If the documents are not available digitally, contact the clerk's office where the case is pending.",
+            "Request to inspect or obtain copies of the official file.",
+            "If replacing counsel, confirm the court record shows you should receive notices directly."
         ],
         links: [
-            { name: "CT Civil/Family Case Look-Up", url: "https://www.jud.ct.gov/jud2.htm" },
-            { name: "CT Judicial Branch - Self-Help", url: "https://www.jud.ct.gov/selfhelp.htm" }
+            { name: "Connecticut E-Services", url: "https://www.jud.ct.gov/external/super/E-Services/efile/" },
+            { name: "Civil/Family Case Lookup", url: "https://civilinquiry.jud.ct.gov/" },
+            { name: "Connecticut Judicial Branch", url: "https://www.jud.ct.gov/" }
         ]
     },
     "DE": {
         name: "Delaware",
-        systemName: "Delaware Courts Case Search",
-        description: "Delaware provides online case search through each court level. The Court of Common Pleas, Superior Court, and Family Court each have their own search systems accessible from the Delaware Courts website.",
+        systemName: "CourtConnect / eFiling",
+        description: "Delaware access depends on the specific court (Superior, Common Pleas, Family, Justice of the Peace, Chancery, or appellate). Use CourtConnect for case lookup, confirm party status with the clerk, and request inspection or copies from that court's clerk when documents are not online.",
         steps: [
-            "Go to the Delaware Courts website.",
-            "Select which court your case is in (Superior, Common Pleas, Family, etc.).",
-            "Click on 'Case Search' or 'Search Court Records.'",
-            "Enter your case number or party name.",
-            "View case details, docket entries, and scheduled hearings."
+            "Identify the specific court: Superior Court, Court of Common Pleas, Family Court, Justice of the Peace Court, Chancery, or appellate court.",
+            "Use CourtConnect where available for docket/case lookup.",
+            "Confirm your party status with the clerk.",
+            "If eFiling access applies, register and ask how to connect to the existing case.",
+            "If documents are not available online, request inspection or copies from that court's clerk.",
+            "Family, juvenile, sealed, and confidential matters may require direct clerk handling."
         ],
         links: [
-            { name: "Delaware Courts - Public Records", url: "https://courts.delaware.gov/records/" },
-            { name: "Delaware Superior Court - Case Search", url: "https://courts.delaware.gov/superior/caseSearch.aspx" },
+            { name: "Delaware CourtConnect", url: "https://courtconnect.courts.delaware.gov/" },
+            { name: "Delaware eFiling", url: "https://courts.delaware.gov/efiling/" },
             { name: "Delaware Courts Help", url: "https://courts.delaware.gov/help/" }
         ]
     },
-
     "FL": {
         name: "Florida",
-        systemName: "Clerk of Court Portals / MyFloridaCounty",
-        description: "Florida case access is managed by each county's Clerk of Court. Many counties use the same platform (Odyssey or similar), but you access it through your specific county clerk's website. The Florida Courts website can direct you to the right place.",
+        systemName: "Florida Courts E-Filing Portal / County Clerk Portals",
+        description: "In Florida, the E-Filing Portal lets self-represented litigants file, but it is not always the full case file. Identify the county clerk where the case is filed, use that clerk's records portal, and request inspection or copies from the county clerk for the complete file.",
         steps: [
-            "Identify which county your case was filed in.",
-            "Go to that county Clerk of Court's website.",
-            "Look for 'Official Records Search,' 'Court Records,' or 'Case Search.'",
-            "Search by case number or your name.",
-            "View docket entries, filed documents, hearing dates, and case status."
+            "Register as a self-represented litigant in the Florida Courts E-Filing Portal if you need to file electronically.",
+            "The e-filing portal may show your filings, but it is not always the full case file.",
+            "Identify the county clerk where the case is filed.",
+            "Use that clerk's records portal if available.",
+            "If the complete file is not online, request inspection/copies from the county clerk.",
+            "For confidential family, juvenile, sealed, or protected records, ask the clerk what party verification is required."
         ],
         links: [
-            { name: "Miami-Dade Clerk - Case Search", url: "https://www2.miami-dadeclerk.com/ocs/search.aspx" },
-            { name: "Hillsborough County Clerk", url: "https://www.hillsclerk.com/Public-Records/Court-Records-Search" },
-            { name: "Florida Courts - Find Your Clerk", url: "https://www.flcourts.gov/Florida-Courts/Clerks" }
+            { name: "Florida Courts E-Filing Portal", url: "https://www.myflcourtaccess.com/" },
+            { name: "Florida Clerks Directory", url: "https://www.flclerks.com/page/clerksdirectory" },
+            { name: "Florida Courts Help", url: "https://help.flcourts.gov/" }
         ]
     },
     "GA": {
         name: "Georgia",
-        systemName: "County Clerk Portals / Odyssey",
-        description: "Georgia case access varies by county. Many Georgia counties use the Odyssey case management system, but access is through each county's Superior Court Clerk website. The Georgia Courts website helps you find the right county portal.",
+        systemName: "PeachCourt / Odyssey eFileGA",
+        description: "Georgia access varies by county and court (Superior, State, Magistrate, Probate, Juvenile, or Municipal). Check whether the court uses PeachCourt or Odyssey eFileGA, save complete copies of any downloadable filings, and otherwise request the official file from the clerk of that court.",
         steps: [
-            "Determine which county your case is filed in.",
-            "Visit that county's Superior Court Clerk website.",
-            "Look for 'Case Search,' 'Court Records,' or 'Odyssey Portal.'",
-            "Search by case number or your name.",
-            "View your case information, docket entries, and hearing schedule."
+            "Identify the county and court: Superior, State, Magistrate, Probate, Juvenile, or Municipal.",
+            "Check whether the court uses PeachCourt or Odyssey eFileGA.",
+            "Register if the system allows self-represented party access.",
+            "If documents can be downloaded from the docket, save complete copies.",
+            "If not, contact the clerk of that court and request the official file.",
+            "For older, sealed, juvenile, or restricted records, expect clerk-only handling."
         ],
         links: [
-            { name: "Fulton County - Case Search", url: "https://publicrecordsaccess.fultoncountyga.gov/Portal/" },
-            { name: "Georgia Courts - Find Your Court", url: "https://www.georgiacourts.gov/find-courts" },
-            { name: "Georgia Court Self-Help", url: "https://georgiacourts.gov/self-help/" }
+            { name: "PeachCourt", url: "https://peachcourt.com/" },
+            { name: "Odyssey eFileGA", url: "https://georgia.tylertech.cloud/OfsWeb" },
+            { name: "Georgia Courts", url: "https://georgiacourts.gov/" }
         ]
     },
     "HI": {
         name: "Hawaii",
-        systemName: "eCourt Kokua",
-        description: "Hawaii provides eCourt Kokua, a free statewide public access system. Any party can search for their case and view case information, hearing calendars, and docket entries for all Hawaii state courts.",
+        systemName: "JEFS / eCourt Kokua",
+        description: "Hawaii self-represented litigants can register for JEFS and ask that it be connected to their case to view and print documents. eCourt Kokua handles public docket searches, and the clerk of the court handles nondigital or restricted records.",
         steps: [
-            "Go to Hawaii eCourt Kokua.",
-            "Search by case ID, citation number, or party name.",
-            "Select the correct circuit (First, Second, Third, or Fifth).",
-            "View your case details, calendar, and docket entries.",
-            "For copies of specific documents, contact the court clerk."
+            "Register for JEFS as a self-represented litigant if your case is eligible.",
+            "Ask that your JEFS account be connected to your case.",
+            "Once connected, use JEFS to view/print documents in your own case where allowed.",
+            "Use eCourt Kokua for public docket searches or document purchases if needed.",
+            "If documents are not digital, contact the clerk of the court where the case is filed.",
+            "Sealed/confidential and some older paper records may require courthouse handling."
         ],
         links: [
-            { name: "Hawaii eCourt Kokua - Case Search", url: "https://www.courts.state.hi.us/legal_references/records/jims" },
-            { name: "Hawaii Judiciary", url: "https://www.courts.state.hi.us/" }
+            { name: "Hawaii eFiling / JEFS", url: "https://www.courts.state.hi.us/legal_references/efiling" },
+            { name: "Hawaii Search Court Records", url: "https://www.courts.state.hi.us/legal_references/records/search_court_records" },
+            { name: "Hawaii Self-Help", url: "https://www.courts.state.hi.us/self-help" }
         ]
     },
     "ID": {
         name: "Idaho",
-        systemName: "iCourt Portal",
-        description: "Idaho uses the iCourt system statewide. Parties can access their case information through the iCourt portal. You can view filed documents, hearing schedules, and case status online.",
+        systemName: "iCourt Portal / File & Serve",
+        description: "Idaho parties search the iCourt Portal and can register for File & Serve for electronic filing/service, confirming they are linked to the case. Download available document images, and otherwise contact or visit the county clerk for the register of actions and filed documents.",
         steps: [
-            "Go to the Idaho iCourt Portal (MyCase link).",
-            "Search by case number, party name, or attorney.",
-            "Select your case from the results.",
-            "View case details, documents, and hearing dates.",
-            "Register for an iCourt account for enhanced access to your case documents."
+            "Search the case through the iCourt Portal.",
+            "Register for File & Serve if you need electronic filing/service.",
+            "Confirm you are linked to the case as a self-represented party.",
+            "If document images are available online, download them.",
+            "If not, contact or visit the county clerk.",
+            "Ask for the register of actions, pleadings, orders, judgments, and nonrestricted filed exhibits."
         ],
         links: [
-            { name: "Idaho iCourt - MyCase Search", url: "https://mycourts.idaho.gov/odysseyportal" },
-            { name: "Idaho Court Assistance", url: "https://courtselfhelp.idaho.gov/" }
+            { name: "Idaho iCourt Portal", url: "https://mycourts.idaho.gov/" },
+            { name: "Idaho File & Serve", url: "https://efileid.tylertech.cloud/OfsEfsp/ui/landing" },
+            { name: "Idaho Self-Help", url: "https://isc.idaho.gov/self-help" }
         ]
     },
-
     "IL": {
         name: "Illinois",
-        systemName: "County Circuit Clerk Portals",
-        description: "Illinois case access is managed at the county level through each Circuit Clerk's office. Cook County has its own system, and many other counties use the Judici platform. You search through your specific county's system.",
+        systemName: "eFileIL / re:SearchIL / Judici",
+        description: "In Illinois, file an appearance or confirm your self-represented status, register through eFileIL, and try re:SearchIL to view documents connected to your case. Judici or the county circuit clerk site handles docket lookup, and the circuit clerk can associate you with the case.",
         steps: [
-            "Identify which county your case is filed in.",
-            "Visit that county's Circuit Clerk website.",
-            "Look for 'Case Search,' 'Online Records,' or 'Judici.'",
-            "Search by case number or party name.",
-            "View docket information, hearing dates, and case status."
+            "File an appearance or confirm you are listed as a self-represented party.",
+            "Register through eFileIL if e-filing applies.",
+            "Try re:SearchIL to view documents connected to your case.",
+            "Use Judici or the county circuit clerk site for docket lookup where available.",
+            "If documents are missing online, contact the circuit clerk and ask to be associated with the case.",
+            "Request courthouse terminal access or copies from the clerk."
         ],
         links: [
-            { name: "Cook County Clerk - Case Search", url: "https://casesearch.cookcountyclerkofcourt.org/DocketSearch" },
-            { name: "Judici - Illinois County Courts", url: "https://www.judici.com/" },
-            { name: "Illinois Courts - Find Your Court", url: "https://www.illinoiscourts.gov/courts-directory" }
+            { name: "eFileIL", url: "https://efile.illinoiscourts.gov/" },
+            { name: "re:SearchIL", url: "https://researchil.tylerhost.net/" },
+            { name: "Judici", url: "https://www.judici.com/" },
+            { name: "Illinois Self-Help", url: "https://www.illinoiscourts.gov/self-help" }
         ]
     },
     "IN": {
         name: "Indiana",
-        systemName: "Odyssey Case Search (MyCase)",
-        description: "Indiana uses a statewide system called Odyssey that provides public access through the MyCase portal. You can search for cases across all Indiana courts and view case information, docket entries, and hearing schedules.",
+        systemName: "MyCase / E-Filing",
+        description: "Indiana parties search the case on MyCase, create an account, and request an access code or case-linking for party-level access. Older or restricted documents that are not online can be requested from the county clerk.",
         steps: [
-            "Go to the Indiana MyCase public portal.",
-            "Search by case number, party name, or attorney name.",
-            "Select the county if searching by name.",
-            "Click on your case to view full details.",
-            "View docket entries, hearing calendar, and case status."
+            "Search the case on MyCase.",
+            "Create an account if needed.",
+            "Request an access code or case-linking process if party-level access is available.",
+            "Download any available documents.",
+            "If older or restricted documents are not online, contact the county clerk.",
+            "Request the official file, chronological case summary, orders, pleadings, and nonrestricted exhibits."
         ],
         links: [
-            { name: "Indiana MyCase - Public Search", url: "https://public.courts.in.gov/mycase/" },
-            { name: "Indiana Courts Self-Service Center", url: "https://www.in.gov/courts/selfservice/" }
+            { name: "Indiana MyCase", url: "https://public.courts.in.gov/mycase" },
+            { name: "Indiana E-Filing", url: "https://efile.courts.in.gov/" },
+            { name: "Indiana Self-Service Legal Center", url: "https://www.in.gov/courts/selfservice/" }
         ]
     },
     "IA": {
         name: "Iowa",
-        systemName: "Iowa Courts Online (ICIS)",
-        description: "Iowa provides the Iowa Court Information System (ICIS) through Iowa Courts Online. Parties can search for their cases statewide and view case details, schedules, and docket information at no cost.",
+        systemName: "Iowa Courts Online / eFile (EDMS)",
+        description: "Iowa self-represented litigants register for EDMS/eFile and confirm the clerk indexed them as a party. Iowa Courts Online provides case/docket information; if documents don't appear, ask the clerk whether your account is connected, or inspect the file at the courthouse.",
         steps: [
-            "Go to Iowa Courts Online.",
-            "Click 'Iowa Courts Online' or 'Case Search.'",
-            "Search by case number, name, or citation.",
-            "Select the correct county and case type.",
-            "View case details, docket entries, and hearing schedule."
+            "Register for EDMS/eFile as a self-represented litigant.",
+            "Confirm the clerk has indexed you correctly as a party.",
+            "Search Iowa Courts Online for case/docket information.",
+            "If documents do not appear, contact the clerk and ask whether your account is connected to the case.",
+            "If electronic access is unavailable, inspect the file at the courthouse or request copies.",
+            "Criminal defendants, incarcerated persons, and juvenile matters may have different handling."
         ],
         links: [
-            { name: "Iowa Courts Online - Case Search", url: "https://www.iowacourts.gov/for-the-public/court-case-information" },
-            { name: "Iowa Courts - Representing Yourself", url: "https://www.iowacourts.gov/for-the-public/representing-yourself" }
+            { name: "Iowa eFile", url: "https://www.iowacourts.state.ia.us/Efile/" },
+            { name: "Iowa Courts Online", url: "https://www.iowacourts.state.ia.us/ESAWebApp/SelectFrame" },
+            { name: "Iowa Representing Yourself", url: "https://www.iowacourts.gov/for-the-public/representing-yourself/" }
         ]
     },
     "KS": {
         name: "Kansas",
-        systemName: "District Court Records Search",
-        description: "Kansas provides online case search through each judicial district. Many Kansas courts are transitioning to a new case management system. You can search by county through the Kansas District Court portal.",
+        systemName: "Public Access Portal / eFiling",
+        description: "Kansas parties register for the District Court Public Access Portal and search by county/case number. If documents are unavailable due to case type, go-live date, or restriction, use the courthouse public terminal or request copies from the clerk.",
         steps: [
-            "Go to the Kansas case search portal for your judicial district.",
-            "Select your county.",
-            "Search by case number or party name.",
-            "View case details, docket entries, and upcoming hearings.",
-            "For document copies, contact the district court clerk's office."
+            "Register for the Kansas District Court Public Access Portal.",
+            "Search the case by county/case number.",
+            "Check whether documents are available online.",
+            "If documents are unavailable due to case type, go-live date, or restriction, use the courthouse public terminal.",
+            "Contact the clerk for copies or certified copies.",
+            "Juvenile, domestic, guardianship, sealed, and restricted records may require clerk-only access or court permission."
         ],
         links: [
-            { name: "Kansas District Court Records", url: "https://www.kscourts.org/Public/Case-Search" },
-            { name: "Johnson County Case Search", url: "https://www.jocogov.org/dept/district-court/case-records" },
-            { name: "Kansas Courts Self-Help", url: "https://www.kscourts.org/Public/Self-Help" }
+            { name: "Kansas Public Access Portal", url: "https://prodportal.kscourts.gov/ProdPortal/" },
+            { name: "Kansas eFiling", url: "https://www.kscourts.gov/eCourt/Kansas-Courts-eFiling" },
+            { name: "Kansas Court Resources", url: "https://www.kscourts.gov/Public" }
         ]
     },
-
     "KY": {
         name: "Kentucky",
-        systemName: "Kentucky CourtNet 2.0 (KYeCourts)",
-        description: "Kentucky uses the KYeCourts system (formerly CourtNet). This statewide system allows parties to search for and view their case information online. You can see filings, hearing dates, and case status for all Kentucky courts.",
+        systemName: "KYeCourts / CourtNet",
+        description: "In Kentucky, identify the county Circuit Court Clerk and use online court tools for docket/case information. CourtNet often provides case data rather than full document images, so contact the Circuit Court Clerk where the case is filed for the complete file.",
         steps: [
-            "Go to the Kentucky Court of Justice case search page.",
-            "Click on 'KYeCourts' or 'CourtNet' case search.",
-            "Search by case number, party name, or attorney.",
-            "Select your county from the options.",
-            "View case details, all filings, and scheduled hearing dates."
+            "Identify the county Circuit Court Clerk.",
+            "Use Kentucky online court tools for docket/case information where available.",
+            "If you are an eFiler, check whether notices/eRetrieval links provide document access.",
+            "CourtNet often provides case data, not full document images.",
+            "For the complete file, contact the Circuit Court Clerk where the case is filed.",
+            "Ask for the official file, copies, or in-person inspection."
         ],
         links: [
-            { name: "Kentucky CourtNet - Case Search", url: "https://kcoj.kycourts.net/kyecourts/" },
-            { name: "Kentucky Courts Help", url: "https://courts.ky.gov/resources/legalhelp/Pages/default.aspx" }
+            { name: "Kentucky Courts", url: "https://www.kycourts.gov/" },
+            { name: "Kentucky eFiling", url: "https://www.kycourts.gov/AOC/Information-and-Technology/Pages/File_Serve(eFiling).aspx/" },
+            { name: "Kentucky Legal Help", url: "https://www.kycourts.gov/Legal-Help/Pages/default.aspx" }
         ]
     },
     "LA": {
         name: "Louisiana",
-        systemName: "Parish Clerk of Court Portals",
-        description: "Louisiana case access is managed by each parish (county equivalent) Clerk of Court. There is no single statewide system. Each parish has its own search portal. Large parishes like Orleans and East Baton Rouge have robust online systems.",
+        systemName: "Parish Clerk of Court Portals (eClerks LA / Clerk Connect)",
+        description: "Louisiana is parish-based. Identify the parish and court, search that parish clerk's portal (some use subscription systems), confirm you are a party of record, and request inspection or copies from the parish Clerk of Court.",
         steps: [
-            "Identify which parish your case is filed in.",
-            "Visit that parish's Clerk of Court website.",
-            "Look for 'Case Search,' 'Records Search,' or 'Civil Records.'",
-            "Search by case number, party name, or filing date.",
-            "View case docket, filings, and hearing information."
+            "Louisiana is parish-based. Identify the parish and court.",
+            "Search that parish clerk's portal if available.",
+            "Some parishes use subscription systems; others require direct clerk contact.",
+            "Confirm you are listed as a party of record.",
+            "Request inspection/copies from the parish Clerk of Court.",
+            "If no digital option exists, ask for in-person inspection, mailed copies, emailed copies, or certified copies."
         ],
         links: [
-            { name: "Orleans Parish - Case Search", url: "https://www.orleanscdc.com/search.aspx" },
-            { name: "East Baton Rouge Clerk of Court", url: "https://www.ebrclerkofcourt.org/" },
-            { name: "Louisiana Courts", url: "https://www.lasc.org/About_the_Court/Courts" }
+            { name: "eClerks LA", url: "https://www.eclerksla.com/about/statewideportal" },
+            { name: "Clerk Connect", url: "https://clerkconnect.com/" },
+            { name: "Louisiana Supreme Court", url: "https://www.lasc.org/" }
         ]
     },
     "ME": {
         name: "Maine",
-        systemName: "Maine Courts Case Search",
-        description: "Maine Judicial Branch provides an online case search system. Parties can look up their cases, view docket information, and check hearing schedules. The system covers all Maine courts.",
+        systemName: "Maine eCourts / re:SearchMaine",
+        description: "Maine parties should confirm their email is on the case record and register for re:SearchMaine if the court/case type uses Maine eCourts, asking the clerk to link the account as a party. Cases not in eCourts, or older paper cases, are handled by the clerk.",
         steps: [
-            "Go to the Maine Judicial Branch case search page.",
-            "Search by case number, party name, or attorney name.",
-            "Select the court location (county).",
-            "View your case details, docket entries, and next hearing date.",
-            "For copies of filed documents, contact the Clerk's Office."
+            "Confirm your email is on the case record.",
+            "Register for re:SearchMaine if your court/case type uses Maine eCourts.",
+            "Ask the clerk to confirm your account is linked as a party.",
+            "If the case is not in eCourts, request the official file from the clerk.",
+            "Some older cases remain paper-based.",
+            "Protection-order and child-protection matters may require special access steps/forms."
         ],
         links: [
-            { name: "Maine Courts - Case Search", url: "https://portal.courts.maine.gov/Portal/" },
-            { name: "Maine Courts Self-Help", url: "https://www.courts.maine.gov/self-help/index.html" }
+            { name: "Maine eCourts", url: "https://www.courts.maine.gov/ecourts/" },
+            { name: "Maine Records Access", url: "https://www.courts.maine.gov/ecourts/access.html" },
+            { name: "Maine Self-Help", url: "https://www.courts.maine.gov/help/index.html" }
         ]
     },
     "MD": {
         name: "Maryland",
-        systemName: "Maryland Judiciary Case Search (Party Access)",
-        description: "Maryland uses a system specifically called 'Case Search' for public access and 'Party Access' for parties to a case. With Party Access, you can see more detailed information about your own case including documents that may not appear in regular public search. Maryland also uses MDEC (Maryland Electronic Courts) for e-filing and document access.",
+        systemName: "MDEC Portal (Party Access, MDJ-004) / CaseSearch",
+        description: "Maryland parties register for the Judiciary Record Search/MDEC portal and complete the notarized MDJ-004 Application for Party Access to view documents remotely. CaseSearch is only public docket access, not full party document access.",
         steps: [
-            "Go to Maryland Judiciary Case Search.",
-            "Search by party name, case number, or company name.",
-            "For enhanced access, use the MDEC system and register for a Party Access account.",
-            "Log in to MDEC to view all documents filed in your case.",
-            "View filings, hearing schedules, and case status in real time."
+            "Register for the Maryland Judiciary Record Search/MDEC portal.",
+            "Complete notarized MDJ-004 Application for Party Access to MDEC Cases.",
+            "Submit the form to the court for that specific case.",
+            "Once approved, view documents remotely through the MDEC portal.",
+            "CaseSearch is only public docket access; it is not full party document access.",
+            "If access is not approved, contact the clerk and ask what is missing."
         ],
         links: [
-            { name: "Maryland Case Search", url: "https://casesearch.courts.state.md.us/casesearch/" },
-            { name: "MDEC - Maryland Electronic Courts", url: "https://mdecportal.courts.state.md.us/mdec/" },
-            { name: "Maryland Courts Self-Help", url: "https://www.mdcourts.gov/selfhelp" },
-            { name: "People's Law Library of Maryland", url: "https://www.peoples-law.org/" }
+            { name: "MDEC Public Info", url: "https://mdcourts.gov/mdec/efilingpublic" },
+            { name: "MDJ-004 Party Access Form", url: "https://www.courts.state.md.us/sites/default/files/court-forms/district/forms/mdj/mdj004.pdf/mdj004.pdf" },
+            { name: "Maryland CaseSearch", url: "https://casesearch.courts.state.md.us/casesearch/" },
+            { name: "MDEC Portal", url: "https://mdecportal.courts.state.md.us/MDODYSSEYPORTAL" }
         ]
     },
-
     "MA": {
         name: "Massachusetts",
-        systemName: "MassCourts Case Search / eFiling",
-        description: "Massachusetts provides online case search through the Trial Court's electronic filing system. Parties can search for their cases and view case information. Some courts also provide access through individual courthouse portals.",
+        systemName: "MassCourts / eFileMA",
+        description: "In Massachusetts, search the docket on MassCourts, confirm you are a party or have filed your appearance, and register with eFileMA if filing applies. Many documents are not remotely available to self-represented parties, so use the clerk/register/recorder's office for the full file.",
         steps: [
-            "Go to the Massachusetts Trial Court case search.",
-            "Select the court department (Superior, District, Housing, etc.).",
-            "Search by case number, party name, or docket number.",
-            "View case details, docket entries, and hearing dates.",
-            "For e-filed documents, use the Massachusetts eFiling system (registration required)."
+            "Search the docket on MassCourts.",
+            "Confirm you are listed as a party or have filed your appearance.",
+            "Register with eFileMA if electronic filing applies.",
+            "Many documents are not remotely available to self-represented parties.",
+            "For the full official file, go to or contact the clerk/register/recorder's office.",
+            "Ask whether document images can be viewed at a courthouse terminal."
         ],
         links: [
-            { name: "Massachusetts Trial Court - Case Search", url: "https://www.masscourts.org/efilefour/UserLogin?associatedCourtType=D" },
-            { name: "Mass.gov - Courts Self-Help", url: "https://www.mass.gov/topics/courts-self-help" }
+            { name: "MassCourts", url: "https://www.masscourts.org/eservices/home.page.2" },
+            { name: "eFileMA", url: "https://www.efilema.com/" },
+            { name: "Massachusetts Court Self-Help", url: "https://www.mass.gov/topics/courts-self-help" }
         ]
     },
     "MI": {
         name: "Michigan",
-        systemName: "MiCourt / County Court Portals",
-        description: "Michigan is rolling out a statewide e-filing system called MiCourt. Currently, most case access is through individual county court websites. Many Michigan courts use the BS&A or Odyssey systems. As a party, you search through your county's court portal.",
+        systemName: "MiFILE / County Court Portals",
+        description: "Michigan has no single statewide public document portal for every trial court. Identify the specific court, register for MiFILE if the court uses it, add yourself as a service contact, and ask the clerk whether your account can access filed documents.",
         steps: [
-            "Identify which county your case is filed in.",
-            "Visit that county's court website (Circuit or District Court).",
-            "Look for 'Case Search,' 'Records,' or 'Online Services.'",
-            "Search by case number or party name.",
-            "View case information, docket entries, and scheduled hearings."
+            "Identify the specific court.",
+            "Register for MiFILE if the court uses it.",
+            "Add yourself as a service contact if appropriate.",
+            "Ask the clerk whether your account can access filed documents in the case.",
+            "Michigan does not have one statewide public document portal for every trial court.",
+            "If online documents are unavailable, request inspection/copies from the court clerk."
         ],
         links: [
-            { name: "Wayne County Circuit Court - Case Search", url: "https://cmspublic.3702.waynecounty.com/" },
-            { name: "Michigan Courts - Find Your Court", url: "https://www.courts.michigan.gov/court-directory/" },
-            { name: "Michigan Legal Help", url: "https://michiganlegalhelp.org/" }
+            { name: "MiFILE", url: "https://mifile.courts.michigan.gov/" },
+            { name: "Michigan Court Directory", url: "https://courts.michigan.gov/courts" },
+            { name: "Michigan Legal Help e-Filing", url: "https://michiganlegalhelp.org/self-help-tools/e-filing" }
         ]
     },
     "MN": {
         name: "Minnesota",
-        systemName: "Minnesota Court Records Online (MCRO)",
-        description: "Minnesota provides Minnesota Court Records Online (MCRO), formerly called MPA (Minnesota Public Access). This free statewide system lets parties search for their cases and view case information across all Minnesota courts.",
+        systemName: "Minnesota Court Records Online (MCRO) / eFile & eServe",
+        description: "Minnesota parties search through MCRO for documents designated for remote access and register for eFile/eServe if filing. Save documents promptly since eFS viewing may be time-limited, and contact the court administrator for anything not available online.",
         steps: [
-            "Go to Minnesota Court Records Online.",
-            "Agree to the terms of use.",
-            "Search by case number, party name, or attorney.",
-            "Select the county where your case is filed.",
-            "View case details, hearing dates, docket entries, and case status."
+            "Search the case through Minnesota Court Records Online.",
+            "Use MCRO for documents designated for remote access.",
+            "Register for eFile/eServe if filing electronically.",
+            "Save documents promptly because eFS document viewing may be time-limited.",
+            "If documents are not available online, contact the court administrator.",
+            "Request copies or courthouse access to the official file."
         ],
         links: [
-            { name: "Minnesota Court Records Online", url: "https://publicaccess.courts.state.mn.us/CaseSearch" },
-            { name: "Minnesota Courts Self-Help", url: "https://www.mncourts.gov/Help-Topics.aspx" }
+            { name: "Minnesota Court Records Online", url: "https://publicaccess.courts.state.mn.us/" },
+            { name: "Minnesota eFile/eServe", url: "https://www.mncourts.gov/file-a-case.aspx" },
+            { name: "Minnesota Self-Help", url: "https://www.mncourts.gov/Help-Topics/Self-Help.aspx" }
         ]
     },
     "MS": {
         name: "Mississippi",
-        systemName: "MEC (Mississippi Electronic Courts)",
-        description: "Mississippi uses the Mississippi Electronic Courts (MEC) system for case management. The system provides public access to case information. Parties can search for their cases and view docket information.",
+        systemName: "MEC / PAMEC",
+        description: "Mississippi access depends on the court (Circuit, Chancery, County, Justice, Municipal, or appellate). Search available MEC/PAMEC tools if the court participates; self-represented parties may have limited e-filing, so ask the clerk about read-only access or use the courthouse terminal.",
         steps: [
-            "Go to the Mississippi Electronic Courts (MEC) public access portal.",
-            "Search by case number or party name.",
-            "Select the county or court.",
-            "View your case details, filings list, and hearing calendar.",
-            "For full document access, contact the Circuit Clerk's office."
+            "Identify whether the case is in Circuit, Chancery, County, Justice, Municipal, or appellate court.",
+            "Search available MEC/PAMEC tools if the court participates.",
+            "Self-represented parties may not have the same e-filing ability as attorneys.",
+            "Ask the clerk whether read-only access is available.",
+            "If the case type is not remotely available, use the courthouse public terminal or request copies.",
+            "Family, domestic, juvenile, sealed, and confidential case types may be restricted."
         ],
         links: [
-            { name: "Mississippi MEC - Case Search", url: "https://www.courts.ms.gov/mec/mec.html" },
-            { name: "Mississippi Courts", url: "https://courts.ms.gov/" }
+            { name: "Mississippi MEC", url: "https://courts.ms.gov/mec/mec.php" },
+            { name: "PAMEC Registration", url: "https://www.pamecapps.mec.ms.gov/onlinereg/" },
+            { name: "Mississippi Judiciary", url: "https://courts.ms.gov/" }
         ]
     },
-
     "MO": {
         name: "Missouri",
-        systemName: "Case.net",
-        description: "Missouri provides Case.net, a free statewide online system operated by the Office of State Courts Administrator. Parties can search for and view case information for all Missouri circuit courts, including filings, docket entries, and hearing schedules.",
+        systemName: "Case.net / eFiling",
+        description: "Missouri parties search Case.net and open available docket entries and attachments; documents filed after Missouri's remote-access cutoff may be visible online, while older documents may require a courthouse terminal. Contact the circuit clerk for locked or missing documents.",
         steps: [
-            "Go to Missouri Case.net.",
-            "Accept the terms of use.",
-            "Search by case number, party name (litigant), or attorney.",
-            "Select the county and court (Circuit, Associate, etc.).",
-            "View complete case details, all docket entries, and hearing dates."
+            "Search the case on Case.net.",
+            "Open available docket entries and attached documents.",
+            "Documents filed after Missouri's remote-access cutoff may be visible online.",
+            "Older documents may require courthouse terminal access.",
+            "If documents are locked or missing, contact the circuit clerk.",
+            "Request the official file, copies, or certified copies directly from the clerk."
         ],
         links: [
-            { name: "Missouri Case.net - Case Search", url: "https://www.courts.mo.gov/casenet/cases/searchCases.do" },
-            { name: "Missouri Courts Self-Help", url: "https://www.courts.mo.gov/page.jsp?id=704" }
+            { name: "Missouri Case.net", url: "https://www.courts.mo.gov/casenet/welcome.do" },
+            { name: "Missouri eFiling", url: "https://www.courts.mo.gov/ecf/index.do" },
+            { name: "Missouri Self-Represented Litigants", url: "https://selfrepresent.mo.gov/" }
         ]
     },
     "MT": {
         name: "Montana",
-        systemName: "Full Court Enterprise Public Access",
-        description: "Montana uses the Full Court Enterprise system. The Montana Courts provide a public access portal where parties can search for their cases and view case information, docket entries, and hearing dates.",
+        systemName: "Montana Courts Public Access / eFile",
+        description: "In Montana, identify the Clerk of District Court (or lower court clerk) and confirm party status. Public access tools show case information only; self-represented parties often obtain records through the clerk rather than e-filing.",
         steps: [
-            "Go to the Montana Courts public case search portal.",
-            "Search by case number, party name, or attorney name.",
-            "Select the court or county.",
-            "View case details, docket entries, and scheduled hearings.",
-            "For document copies, contact the Clerk of District Court."
+            "Identify the Clerk of District Court or lower court clerk.",
+            "Confirm your party status.",
+            "Use public access tools only for case information where available.",
+            "Self-represented parties may have to file and obtain records through the clerk rather than e-filing.",
+            "Request inspection/copies from the clerk of the court where the case is pending.",
+            "Ask for the docket/register, pleadings, orders, judgments, and nonrestricted exhibits."
         ],
         links: [
-            { name: "Montana Courts - Public Access", url: "https://courts.mt.gov/courts/dcs/records" },
-            { name: "Montana Self-Help Law Center", url: "https://courts.mt.gov/selfhelp" }
+            { name: "Montana Courts", url: "https://courts.mt.gov/" },
+            { name: "Montana Court Forms", url: "https://courts.mt.gov/forms/" },
+            { name: "Montana eFile Login", url: "https://mtefile.courts.mt.gov/login" }
         ]
     },
     "NE": {
         name: "Nebraska",
-        systemName: "JUSTICE (Case Search)",
-        description: "Nebraska uses the JUSTICE system (Judicial Users System to Improve Court Efficiency). The Nebraska Judicial Branch provides online case search that allows parties to find their cases and view case information across all Nebraska courts.",
+        systemName: "JUSTICE Search / eFiling",
+        description: "Nebraska access depends on the court (District, County, Juvenile, appellate, or Supreme Court). Search Nebraska JUSTICE and register for eFiling/eNotice; some details and images require a Nebraska.gov account or fee, so ask about courthouse public terminals to avoid remote fees.",
         steps: [
-            "Go to the Nebraska Judicial Branch case search (JUSTICE).",
-            "Search by case number, party name, or attorney.",
-            "Select the county or judicial district.",
-            "View case details, docket entries, and hearing schedule.",
-            "For document copies, contact the Clerk of the District Court."
+            "Identify whether the case is District, County, Juvenile, appellate, or Supreme Court.",
+            "Search Nebraska JUSTICE if available.",
+            "Register for eFiling/eNotice if applicable.",
+            "Some case details and images may require a Nebraska.gov account or fee.",
+            "To avoid remote fees, ask about courthouse public terminals.",
+            "If digital access is incomplete, request copies from the clerk."
         ],
         links: [
-            { name: "Nebraska JUSTICE - Case Search", url: "https://www.nebraska.gov/courts/case-search/" },
-            { name: "Nebraska Courts Self-Help", url: "https://supremecourt.nebraska.gov/self-help" }
+            { name: "Nebraska eFiling", url: "https://nebraskajudicial.gov/e-services/efiling" },
+            { name: "Nebraska JUSTICE Search", url: "https://www.nebraska.gov/justicecc/ccname.cgi" },
+            { name: "Nebraska Self-Help", url: "https://supremecourt.nebraska.gov/self-help" }
         ]
     },
     "NV": {
         name: "Nevada",
-        systemName: "County Court Portals (Odyssey)",
-        description: "Nevada case access is managed at the county level. Clark County (Las Vegas) and Washoe County (Reno) have their own online portals. Many counties use the Odyssey system. As a party, you access your case through your county's specific court website.",
+        systemName: "eFileNV / County Court Portals",
+        description: "Nevada is county-based. Identify the county and court, check the local court or county clerk portal, and register through eFileNV if that court uses it. Clark County, Washoe County, and smaller counties may all use different procedures.",
         steps: [
-            "Identify which county your case is filed in.",
-            "Visit that county's District Court or Justice Court website.",
-            "Look for 'Case Search,' 'Records,' or 'Odyssey Portal.'",
-            "Search by case number or party name.",
-            "View case information, docket entries, and hearing schedule."
+            "Nevada is county-based. Identify the county and court.",
+            "Check the local court or county clerk portal.",
+            "Register through eFileNV if that court uses it and your case type allows it.",
+            "Ask whether party-level access is available.",
+            "If not, request the file from the county clerk or court clerk.",
+            "Clark County, Washoe County, and smaller counties may all use different procedures."
         ],
         links: [
-            { name: "Clark County (Las Vegas) - Case Search", url: "https://www.clarkcountycourts.us/Anonymous/default.aspx" },
-            { name: "Washoe County - Case Search", url: "https://www.washoecourts.com/CaseSearch" },
-            { name: "Nevada Courts Self-Help", url: "https://selfhelp.nvcourts.gov/" }
+            { name: "eFileNV", url: "https://nevada.tylertech.cloud/ofsweb" },
+            { name: "Nevada Self-Help", url: "https://selfhelp.nvcourts.gov/" },
+            { name: "Nevada Courts", url: "https://www.nvcourts.gov/" }
         ]
     },
-
     "NH": {
         name: "New Hampshire",
-        systemName: "NH Court Case Look-Up",
-        description: "New Hampshire Judicial Branch provides an online case look-up system. Parties can search for their cases and view basic case information, hearing dates, and docket entries for cases in all New Hampshire courts.",
+        systemName: "Case Access Portal / File & Serve",
+        description: "New Hampshire parties register in the Case Access Portal as a self-represented party/non-attorney, enter the case number, and submit a party-access request. After approval you can view or download eligible documents; confidential cases remain restricted.",
         steps: [
-            "Go to the New Hampshire Judicial Branch case look-up page.",
-            "Search by case number, party name, or court location.",
-            "Select the appropriate court (Superior, Circuit, etc.).",
-            "View case details, docket entries, and hearing dates.",
-            "For document copies, contact the court clerk's office."
+            "Register in the Case Access Portal as a self-represented party/non-attorney.",
+            "Enter the case number.",
+            "Submit a party-access request.",
+            "After approval, view/download eligible case documents.",
+            "If access is denied or incomplete, contact the clerk.",
+            "Confidential cases/documents remain restricted."
         ],
         links: [
-            { name: "NH Courts - Case Look-Up", url: "https://www.courts.nh.gov/resources/case-look" },
-            { name: "NH Courts Self-Help", url: "https://www.courts.nh.gov/self-help" }
+            { name: "NH Case Access Portal", url: "https://odypa.nhecourt.us/portal" },
+            { name: "NH File & Serve", url: "https://newhampshire.tylertech.cloud/ofsweb" },
+            { name: "NH Self-Help", url: "https://www.courts.nh.gov/self-help" }
         ]
     },
     "NJ": {
         name: "New Jersey",
-        systemName: "eCourts / NJ Courts Online",
-        description: "New Jersey uses the eCourts system for online case access. Parties can search for their civil, family, and special civil part cases. The system provides case status, hearing dates, and docket information. NJ has also implemented the Judiciary Electronic Document Submission (JEDS) system.",
+        systemName: "eCourts / JEDS",
+        description: "In New Jersey, create an eCourts account if your case type supports it and request direct access to view the case jacket. JEDS is mainly for document submission, not a full case-file viewer; if your case is not eligible, contact the court clerk.",
         steps: [
-            "Go to the NJ Courts Online portal.",
-            "Click on 'Civil Case Information' or 'eCourts.'",
-            "Search by case number, party name, or docket number.",
-            "Select the county (vicinage) where your case is filed.",
-            "View case status, filed documents list, and scheduled hearing dates."
+            "Create an eCourts account if your case type supports it.",
+            "Request direct access to your case.",
+            "Use eCourts direct access to view the case jacket where available.",
+            "Use JEDS mainly for document submission, not as a full case-file viewer.",
+            "If your case is not eligible for direct access, contact the court clerk.",
+            "Request in-person inspection/copies or ask what motion/application is needed."
         ],
         links: [
-            { name: "NJ Courts - eCourts Public Access", url: "https://portal.njcourts.gov/webe5/ExternalPASearch" },
-            { name: "NJ Courts Self-Help", url: "https://www.njcourts.gov/self-help" }
+            { name: "NJ Self-Represented Civil eCourts Access", url: "https://www.njcourts.gov/self-help/srl-civil-ecourts-access" },
+            { name: "JEDS", url: "https://www.njcourts.gov/self-help/jeds" },
+            { name: "NJ eCourts", url: "https://www.njcourts.gov/attorneys/ecourts" }
         ]
     },
     "NM": {
         name: "New Mexico",
-        systemName: "Odyssey Case Search / NM Courts Case Lookup",
-        description: "New Mexico provides a statewide case lookup through the NM Courts website. The system uses Odyssey for case management. Parties can search for their cases across all New Mexico courts and view case information online.",
+        systemName: "Case Lookup / re:Search NM",
+        description: "New Mexico parties use Case Lookup for docket information and register for re:Search NM in the proper pro se role for document access. Ask the clerk to confirm your party access; sealed, adoption, abuse/neglect, mental health, juvenile, and protected cases may be restricted.",
         steps: [
-            "Go to the New Mexico Courts case lookup portal.",
-            "Search by case number, party name, or attorney.",
-            "Select the court district.",
-            "View case details, docket entries, and hearing schedule.",
-            "For e-filed documents, register on the NM Odyssey File & Serve system."
+            "Use Case Lookup for docket information.",
+            "Register for re:Search NM if you need document access.",
+            "Apply/request access in the proper self-represented/pro se role.",
+            "Ask the clerk to confirm your party access.",
+            "If records are not digital, request the official file from the clerk.",
+            "Sealed, adoption, abuse/neglect, mental health, juvenile, and protected cases may be restricted."
         ],
         links: [
-            { name: "New Mexico Courts - Case Lookup", url: "https://caselookup.nmcourts.gov/caselookup/" },
-            { name: "NM Courts Self-Help", url: "https://www.nmcourts.gov/self-help/" }
+            { name: "New Mexico Case Lookup", url: "https://caselookup.nmcourts.gov/caselookup" },
+            { name: "re:Search NM", url: "https://researchnm.tylerhost.net/" },
+            { name: "NM Self-Representation", url: "https://selfrepresentation.nmcourts.gov/" }
         ]
     },
     "NY": {
         name: "New York",
-        systemName: "NYSCEF (eFiling) / WebCivil Supreme",
-        description: "New York has several systems depending on the court. NYSCEF (New York State Courts Electronic Filing) is the primary system for Supreme Court cases. WebCivil Supreme provides case information for civil cases. For NYC, there is also the eCourts system. Parties can view documents filed in their case through NYSCEF.",
+        systemName: "NYSCEF / Case Search",
+        description: "In New York, determine whether your court/county/case type is in NYSCEF; if so, create an unrepresented litigant account and connect it to the case to view the e-filed record. Cases not in NYSCEF go through the county or court clerk, and certain sensitive matters require special procedures.",
         steps: [
-            "Determine which court your case is in (Supreme, Civil, Family, etc.).",
-            "For Supreme Court civil cases, go to NYSCEF.",
-            "Search by index number (case number) or party name.",
-            "View all e-filed documents, motions, and court orders directly online.",
-            "For non-Supreme Court cases, use WebCivil Local or eCourts."
+            "Determine whether your court/county/case type is in NYSCEF.",
+            "If yes, create an unrepresented litigant account.",
+            "Record consent or connect the account to the case as required.",
+            "Use NYSCEF to view/print the e-filed record.",
+            "If the case is not in NYSCEF, contact the county clerk or court clerk.",
+            "Family Court, sealed criminal, matrimonial, adoption, youthful offender, and protected records may require special procedures."
         ],
         links: [
-            { name: "NYSCEF - NY State Courts E-Filing", url: "https://iapps.courts.state.ny.us/nyscef/Login" },
-            { name: "WebCivil Supreme - Case Search", url: "https://iapps.courts.state.ny.us/webcivil/FCASMain" },
-            { name: "NY Courts - CourtHelp", url: "https://www.nycourts.gov/courthelp/" }
+            { name: "NYSCEF for Unrepresented Litigants", url: "https://www.nycourts.gov/efile-unrepresented" },
+            { name: "NYSCEF Case Search", url: "https://iapps.courts.state.ny.us/nyscef/CaseSearch" },
+            { name: "NY CourtHelp", url: "https://www.nycourts.gov/courthelp/" }
         ]
     },
-
     "NC": {
         name: "North Carolina",
-        systemName: "eCourts Services Portal",
-        description: "North Carolina has been transitioning to a new statewide eCourts system built on the Odyssey platform. The eCourts portal allows parties to search for cases and view documents electronically. Some counties are still transitioning, but the system is expanding statewide.",
+        systemName: "eCourts Portal",
+        description: "North Carolina parties search the NC eCourts Portal and view public, nonconfidential documents there. If documents are missing, contact the Clerk of Superior Court in the county and ask whether the case is fully migrated and whether party access exists.",
         steps: [
-            "Go to the NC eCourts Services Portal.",
-            "Create a free account or search as a guest.",
-            "Search by case number, party name, or attorney.",
-            "View case details, docket entries, filed documents, and hearing schedule.",
-            "If your county hasn't transitioned yet, contact the Clerk of Superior Court."
+            "Search the case in the NC eCourts Portal.",
+            "View public, nonconfidential documents available through the portal.",
+            "Register if needed for saved access or e-filing.",
+            "If documents are missing, contact the Clerk of Superior Court in the county.",
+            "Ask whether the case is fully migrated and whether party access exists.",
+            "If not digital, request inspection/copies from the clerk."
         ],
         links: [
-            { name: "NC eCourts - Case Search", url: "https://www.nccourts.gov/services/ecourts-services-portal" },
-            { name: "NC Courts - Help for Self-Represented", url: "https://www.nccourts.gov/help" }
+            { name: "NC eCourts Portal", url: "https://portal-nc.tylertech.cloud/Portal/" },
+            { name: "NC eCourts Services", url: "https://www.nccourts.gov/services/ecourts-services" },
+            { name: "NC Help Topics", url: "https://www.nccourts.gov/help-topics" }
         ]
     },
     "ND": {
         name: "North Dakota",
-        systemName: "North Dakota Courts Public Search",
-        description: "North Dakota provides a statewide public case search through the ND Courts website. Parties can search all district courts and view case information, docket entries, and hearing dates.",
+        systemName: "North Dakota Public Search / File & Serve",
+        description: "North Dakota parties search Public Search and confirm whether the result includes case information only or document images. Register for File & Serve if filing, and use the courthouse terminal or clerk copies when document images are unavailable.",
         steps: [
-            "Go to the North Dakota Courts public case search.",
-            "Search by case number, party name, or attorney.",
-            "Select the judicial district or county.",
-            "View case details, all docket entries, and upcoming hearings.",
-            "For document copies, contact the Clerk of District Court."
+            "Search the case through North Dakota Public Search.",
+            "Confirm whether the result includes only case information or document images.",
+            "Register for File & Serve if filing electronically applies.",
+            "Ask the clerk whether your account can be connected as a party.",
+            "If document images are unavailable, use the courthouse terminal or request copies.",
+            "Juvenile, adoption, mental health, sealed, warrant, and protected records may be restricted."
         ],
         links: [
-            { name: "ND Courts - Public Case Search", url: "https://publicsearch.ndcourts.gov/" },
-            { name: "ND Courts Legal Self-Help", url: "https://www.ndcourts.gov/legal-self-help" }
+            { name: "North Dakota Public Search", url: "https://publicsearch.ndcourts.gov/" },
+            { name: "ND File & Serve", url: "https://northdakota.tylerhost.net/ofsweb" },
+            { name: "ND Legal Self-Help", url: "https://www.ndcourts.gov/legal-self-help" }
         ]
     },
     "OH": {
         name: "Ohio",
-        systemName: "County Clerk of Courts Portals",
-        description: "Ohio case access is managed by each county's Clerk of Courts. There is no single statewide portal. Each county has its own system. Most Ohio counties provide free online case search through their Clerk of Courts website.",
+        systemName: "County Clerk of Courts Portals / eFileOH",
+        description: "Ohio is county-based. Identify the county and court, go to that county Clerk of Courts website, and use its docket/case-search system. If document images are not online, contact the clerk for the docket, file-stamped pleadings, orders, and nonrestricted exhibits.",
         steps: [
-            "Identify which county your case is filed in.",
-            "Visit that county's Clerk of Courts website.",
-            "Look for 'Case Search,' 'Docket Search,' or 'Online Records.'",
-            "Search by case number or party name.",
-            "View docket entries, filed documents, hearing dates, and case status."
+            "Ohio is county-based. Identify the county and court.",
+            "Go to that county Clerk of Courts website.",
+            "Use the county docket/case-search system if available.",
+            "If document images are not online, contact the clerk.",
+            "Request the docket, file-stamped pleadings, motions, orders, judgments, and nonrestricted exhibits.",
+            "For certified copies, follow that county clerk's copy/certification process."
         ],
         links: [
-            { name: "Cuyahoga County (Cleveland) - Case Search", url: "https://cpdocket.cp.cuyahogacounty.us/" },
-            { name: "Franklin County (Columbus) - Case Search", url: "https://fcdcfcjs.co.franklin.oh.us/CaseInformationOnline/" },
-            { name: "Hamilton County (Cincinnati) - Case Search", url: "https://www.courtclerk.org/records-search/" },
-            { name: "Ohio Legal Help", url: "https://www.ohiolegalhelp.org/" }
+            { name: "Ohio Self-Represented Resources", url: "https://www.supremecourt.ohio.gov/courts/services-to-courts/court-services/access-to-justice-resources/" },
+            { name: "Ohio Court of Claims eFileOH", url: "https://www.efileoh.com/" }
         ]
     },
     "OK": {
         name: "Oklahoma",
-        systemName: "OSCN / ODCR (On Demand Court Records)",
-        description: "Oklahoma has two systems: OSCN (Oklahoma State Courts Network) and ODCR (On Demand Court Records). OSCN covers most counties with free access. ODCR covers remaining counties. Both allow parties to search for their cases and view docket information.",
+        systemName: "OSCN (Oklahoma State Courts Network)",
+        description: "Oklahoma parties search OSCN and open docket entries to download attached PDFs where available. If a filing is listed but no PDF appears, contact the county court clerk for the official file; municipal, sealed, juvenile, and some older records may not appear on OSCN.",
         steps: [
-            "Go to OSCN.net or ODCR.com depending on your county.",
-            "Search by case number, party name, or date filed.",
-            "Select your county from the list.",
-            "View case details, all docket entries, minutes, and filed documents.",
-            "Many documents are viewable directly as scanned images on OSCN."
+            "Search the case through OSCN.",
+            "Open docket entries and download attached PDFs where available.",
+            "If a filing is listed but no PDF appears, contact the county court clerk.",
+            "Request the official file or unscanned documents.",
+            "Ask for copies, certified copies, or in-person inspection.",
+            "Municipal, sealed, juvenile, and some older records may not appear on OSCN."
         ],
         links: [
-            { name: "OSCN - Oklahoma Case Search", url: "https://www.oscn.net/dockets/" },
-            { name: "ODCR - On Demand Court Records", url: "https://www.odcr.com/" },
-            { name: "Oklahoma Law Help", url: "https://oklaw.org/" }
+            { name: "OSCN Docket Search", url: "https://www.oscn.net/dockets/search.aspx" },
+            { name: "Oklahoma State Courts Network", url: "https://www.oscn.net/" }
         ]
     },
-
     "OR": {
         name: "Oregon",
-        systemName: "Oregon eCourt (OECI) / Oregon Judicial Case Information Network",
-        description: "Oregon uses Oregon eCourt Case Information (OECI). Parties can create an account to access their case information online. The system provides access to case documents, hearing schedules, and docket information for all Oregon circuit courts.",
+        systemName: "Oregon Records Portal / OJCIN / File & Serve",
+        description: "In Oregon, the free portal shows basic case information but not full document access. Register for File & Serve if filing; remote document access through OJCIN may be limited by eligibility/subscription, so use the courthouse public kiosk or request copies from the court.",
         steps: [
-            "Go to the Oregon Judicial Department's OECI portal.",
-            "Create a free account (registration required for full access).",
-            "Search by case number or party name.",
-            "View case details, filed documents, hearing calendar, and judgments.",
-            "Download or print documents directly from the portal."
+            "Use the free portal for basic case information.",
+            "Do not assume it includes full document access.",
+            "Register for File & Serve if you need to file electronically.",
+            "Remote document access through OJCIN may be limited by eligibility/subscription.",
+            "If you cannot get remote documents, use the courthouse public kiosk or request copies from the court.",
+            "Ask the clerk how a party may inspect their own official file."
         ],
         links: [
-            { name: "Oregon eCourt Case Information (OECI)", url: "https://webportal.courts.oregon.gov/portal" },
-            { name: "Oregon Courts Self-Help", url: "https://www.courts.oregon.gov/self-help/Pages/default.aspx" }
+            { name: "Oregon Records Portal", url: "https://webportal.courts.oregon.gov/portal/" },
+            { name: "OJCIN Online", url: "https://www.courts.oregon.gov/services/online/Pages/ojcin.aspx" },
+            { name: "Oregon File & Serve", url: "https://oregon.tylertech.cloud/OfsWeb" }
         ]
     },
     "PA": {
         name: "Pennsylvania",
-        systemName: "UJS Web Portal / PAcFile",
-        description: "Pennsylvania's Unified Judicial System (UJS) provides a web portal for public case search. The system covers courts of common pleas, magisterial district courts, and appellate courts. Parties can search statewide and also use PAcFile for electronic filing and case access.",
+        systemName: "UJS Web Portal / PACFile",
+        description: "Pennsylvania parties search the docket sheet on the UJS Portal and register for PACFile if filing. Docket sheets usually do not include downloadable filings, so contact the county Clerk of Courts or Prothonotary for documents.",
         steps: [
-            "Go to the Pennsylvania UJS Web Portal.",
-            "Select 'Court Case Information' or use the search function.",
-            "Choose the court type (Common Pleas, MDJ, Appellate).",
-            "Search by case number, party name, or docket number.",
-            "View case details, docket entries, calendar events, and filed documents."
+            "Search the docket sheet on the UJS Portal.",
+            "Register for PACFile if e-filing applies.",
+            "Understand that docket sheets usually do not include downloadable filings.",
+            "Contact the county Clerk of Courts or Prothonotary for documents.",
+            "Request copies or in-person inspection of the official file.",
+            "Juvenile, sealed, expunged, limited-access, and protected records may be restricted."
         ],
         links: [
-            { name: "PA UJS Web Portal - Case Search", url: "https://ujsportal.pacourts.us/" },
-            { name: "PAcFile - PA Courts E-Filing", url: "https://pacfile.pacourts.us/" },
-            { name: "PA Courts Self-Help", url: "https://www.pacourts.us/learn" }
+            { name: "UJS Web Portal", url: "https://ujsportal.pacourts.us/" },
+            { name: "PACFile", url: "https://ujsportal.pacourts.us/PACFile/Overview" },
+            { name: "Representing Yourself", url: "https://www.pacourts.us/learn/representing-yourself" }
         ]
     },
     "RI": {
         name: "Rhode Island",
-        systemName: "RI Courts Public Portal",
-        description: "Rhode Island provides a public access portal for case searches. Parties can look up their cases in Superior Court, District Court, and Family Court. The system provides case status, docket entries, and hearing information.",
+        systemName: "RI Public Portal / File & Serve",
+        description: "Rhode Island parties search the Public Portal and register for File & Serve if filing. The portal may show docket/register information but not every document, so ask the clerk whether full documents are available through courthouse terminals or by copy request.",
         steps: [
-            "Go to the Rhode Island Judiciary public portal.",
-            "Select the court (Superior, District, or Family).",
-            "Search by case number or party name.",
-            "View case details, docket entries, and hearing dates.",
-            "For document copies, contact the Clerk's office of the appropriate court."
+            "Search the case in the Public Portal.",
+            "Register for File & Serve if filing electronically applies.",
+            "Public portal access may show docket/register information but not every document.",
+            "Ask the clerk whether full documents are available through courthouse terminals.",
+            "If not, request copies from the clerk's office.",
+            "Remote document access may be limited for non-attorney users."
         ],
         links: [
-            { name: "RI Courts - Public Portal", url: "https://www.courts.ri.gov/PublicResources/Pages/Records.aspx" },
-            { name: "RI Courts Self-Help", url: "https://www.courts.ri.gov/PublicResources/Pages/Self-Help.aspx" }
+            { name: "RI Public Portal", url: "https://publicportal.courts.ri.gov/PublicPortal/" },
+            { name: "RI File & Serve", url: "https://rhodeisland.tylertech.cloud/ofsweb" },
+            { name: "Representing Yourself in RI", url: "https://www.courts.ri.gov/Public-Resources/Pages/default.aspx" }
         ]
     },
     "SC": {
         name: "South Carolina",
-        systemName: "SC Courts Public Index",
-        description: "South Carolina provides a public index for case searches through the SC Judicial Branch website. Parties can search for cases in Circuit Court, Family Court, and Common Pleas. The system provides docket information and case status.",
+        systemName: "SC Case Records Search (Public Index) / eFiling",
+        description: "South Carolina parties use the Public Index for the county/court and confirm whether documents are online or only docket entries. Self-represented litigants generally file traditionally, and the Clerk of Court handles inspection/copies of the official file.",
         steps: [
-            "Go to the South Carolina Judicial Branch public index.",
-            "Search by case number, party name, or attorney.",
-            "Select the county where your case is filed.",
-            "View case details, docket entries, and hearing dates.",
-            "For document copies, contact the Clerk of Court in your county."
+            "Use the Public Index for the county/court.",
+            "Confirm whether documents are available online or only docket entries.",
+            "Self-represented litigants generally file traditionally if e-filing is not available to them.",
+            "Contact the Clerk of Court where the case is pending.",
+            "Request inspection/copies of the official file.",
+            "Ask whether any document is sealed, juvenile, adoption-related, confidential, or courthouse-only."
         ],
         links: [
-            { name: "SC Courts - Public Index", url: "https://www.sccourts.org/caseSearch/" },
-            { name: "SC Courts - Self-Help", url: "https://www.sccourts.org/selfHelp/" }
+            { name: "SC Case Records Search", url: "https://www.sccourts.org/case-records-search/" },
+            { name: "SC Self-Help", url: "https://www.sccourts.org/selfHelp/" },
+            { name: "SC eFiling", url: "https://www.sccourts.org/efiling/" }
         ]
     },
-
     "SD": {
         name: "South Dakota",
-        systemName: "South Dakota UJS Case Search (Odyssey)",
-        description: "South Dakota's Unified Judicial System provides an online case search through the Odyssey portal. Parties can search for their cases statewide and view docket information, hearing dates, and case status.",
+        systemName: "eCourts / PARS",
+        description: "South Dakota parties register for eCourts to view available case summaries and use PARS for record searching, understanding summaries are not always the full file. For full open records, use courthouse public terminals or ask the clerk for the party record-request process.",
         steps: [
-            "Go to the South Dakota UJS case search portal.",
-            "Search by case number, party name, or attorney.",
-            "Select the county or circuit.",
-            "View case details, docket entries, and hearing dates.",
-            "For copies of specific documents, contact the Clerk of Courts."
+            "Register for eCourts to view available case summaries.",
+            "Use PARS where appropriate for record searching.",
+            "Understand that case summaries are not always the full file.",
+            "For full open court records, use courthouse public terminals or clerk requests.",
+            "As a named party, ask the clerk for the party record-request process.",
+            "Request copies/certified copies from the clerk if needed."
         ],
         links: [
-            { name: "SD UJS - Odyssey Case Search", url: "https://ujspublic.sd.gov/CaseSearch.aspx" },
-            { name: "SD Courts Self-Help", url: "https://ujs.sd.gov/Self_Help/" }
+            { name: "South Dakota Cases and Records", url: "https://ujs.sd.gov/cases-and-records/" },
+            { name: "eCourts", url: "https://ecourts.sd.gov/" },
+            { name: "PARS", url: "https://ujspars.sd.gov/" },
+            { name: "South Dakota Forms", url: "https://ujs.sd.gov/form-file-search/" }
         ]
     },
     "TN": {
         name: "Tennessee",
-        systemName: "County Clerk Portals / TNCourts.gov",
-        description: "Tennessee case access varies by county. Many Tennessee counties use the CaseLink or Odyssey systems. The Tennessee Courts website can direct you to the correct county clerk's system for your area.",
+        systemName: "Public Case History / County Clerk Portals",
+        description: "Tennessee trial-court records are county/court based (Circuit, Criminal, Chancery, General Sessions, Juvenile, Probate, or appellate). Search the county clerk's portal, use Public Case History/C-Track for appellate cases, and request inspection/copies from the county clerk otherwise.",
         steps: [
-            "Identify which county your case is in.",
-            "Visit the Tennessee Courts website or your county Circuit Court Clerk's website.",
-            "Look for 'Case Search,' 'Records,' or 'CaseLink.'",
-            "Search by case number or party name.",
-            "View case docket, hearing schedule, and case status."
+            "Tennessee trial-court records are county/court based.",
+            "Identify the county and court: Circuit, Criminal, Chancery, General Sessions, Juvenile, Probate, or appellate.",
+            "Search the county clerk's portal if available.",
+            "For appellate cases, use Public Case History/C-Track.",
+            "If trial documents are not online, request inspection/copies from the county clerk.",
+            "Ask whether remote copies, mailed copies, or in-person public terminal access is available."
         ],
         links: [
-            { name: "Tennessee Courts - Case Information", url: "https://www.tncourts.gov/programs/case-management" },
-            { name: "Davidson County (Nashville) - Case Search", url: "https://sci.ccc.nashville.gov/" },
-            { name: "Tennessee Self-Help Center", url: "https://www.tncourts.gov/programs/self-help-center" }
+            { name: "Tennessee Public Case History", url: "https://www.tncourts.gov/courts/supreme-court/public-case-history" },
+            { name: "Tennessee Self-Help", url: "https://www.tncourts.gov/programs/self-help-center" },
+            { name: "Tennessee Courts", url: "https://www.tncourts.gov/courts" }
         ]
     },
     "TX": {
         name: "Texas",
-        systemName: "County District Clerk Portals / Re:SearchTX",
-        description: "Texas case access is primarily managed at the county level through each District Clerk's office. Texas also has Re:SearchTX, a statewide records portal covering some counties. Major counties like Harris (Houston) and Dallas have their own robust online systems.",
+        systemName: "eFileTexas / re:SearchTX",
+        description: "Texas parties register for eFileTexas and use the same credentials for re:SearchTX where available to check whether party access to documents exists. If the county/case is not in re:SearchTX, contact the District Clerk or County Clerk; access varies heavily by county.",
         steps: [
-            "Identify which county your case is filed in.",
-            "Visit that county's District Clerk website.",
-            "Look for 'Case Search,' 'Records Search,' or 'Online Services.'",
-            "Search by case number, party name, or cause number.",
-            "View case details, all filings, and hearing dates."
+            "Register for eFileTexas if e-filing applies.",
+            "Use the same credentials for re:SearchTX where available.",
+            "Search your case and check whether party access to documents is available.",
+            "If the county/case is not in re:SearchTX, contact the District Clerk or County Clerk.",
+            "Request the official file, docket sheet, orders, pleadings, and nonrestricted exhibits.",
+            "Texas access varies heavily by county and clerk system."
         ],
         links: [
-            { name: "Re:SearchTX - Statewide Records", url: "https://research.txcourts.gov/CourtRecordsSearch" },
-            { name: "Harris County (Houston) - Case Search", url: "https://www.hcdistrictclerk.com/edocs/public/search.aspx" },
-            { name: "Dallas County - Records Search", url: "https://www.dallascounty.org/department/distclerk/disclaimer.php" },
-            { name: "Texas Law Help", url: "https://texaslawhelp.org/" }
+            { name: "eFileTexas", url: "https://efile.txcourts.gov/" },
+            { name: "re:SearchTX", url: "https://research.txcourts.gov/" },
+            { name: "Texas Legal Self-Help", url: "https://www.txcourts.gov/programs-services/self-help/" }
         ]
     },
     "UT": {
         name: "Utah",
-        systemName: "XChange (Utah Courts Case Search)",
-        description: "Utah provides XChange, a public case search system through the Utah State Courts. Parties can search for their cases and view case information. For more detailed document access, parties can register for the court's e-filing system.",
+        systemName: "MyCase / XChange",
+        description: "Utah parties create a MyCase account, complete identity verification, and ask the clerk to link eligible district/justice court cases for free party access to case information and documents. XChange is for public/paid search access.",
         steps: [
-            "Go to the Utah Courts XChange case search.",
-            "Search by case number, party name, or attorney.",
-            "Select the court or district.",
-            "View case details, docket entries, and hearing schedule.",
-            "For document access, register on the Utah Courts e-filing system (OCAP)."
+            "Create a MyCase account.",
+            "Complete identity verification.",
+            "Ask the clerk to link all eligible district/justice court cases if they do not appear.",
+            "Use MyCase for free party access to eligible case information and documents.",
+            "Use XChange only if you need public/paid search access.",
+            "If the case type is not eligible, request documents from the clerk."
         ],
         links: [
-            { name: "Utah XChange - Case Search", url: "https://www.utcourts.gov/cal/" },
-            { name: "Utah Courts Self-Help", url: "https://www.utcourts.gov/selfhelp/" }
+            { name: "Utah MyCase", url: "https://www.utcourts.gov/en/self-help/services/mycase.html" },
+            { name: "Utah XChange", url: "https://xchange.utcourts.gov/" },
+            { name: "Utah Self-Help", url: "https://www.utcourts.gov/en/self-help.html" }
         ]
     },
-
     "VT": {
         name: "Vermont",
-        systemName: "Vermont Judiciary Online Case Access",
-        description: "Vermont Judiciary provides online case access through their website. Parties can search for case information in all Vermont courts. The system provides docket entries, hearing dates, and case status.",
+        systemName: "Vermont Public Portal / eFiling",
+        description: "Vermont parties should confirm their email is on the court record, file a pro se appearance or eServices request if needed, register in the Public Portal, and request elevated access as a case party. If the portal will not link, contact the clerk to match the email on the case.",
         steps: [
-            "Go to the Vermont Judiciary website.",
-            "Navigate to 'Online Case Access' or 'Case Records.'",
-            "Search by case number, party name, or docket number.",
-            "Select the court unit (Superior Court - Civil, Criminal, Family, etc.).",
-            "View case details, docket entries, and hearing schedule."
+            "Make sure your email is on the court record.",
+            "File a pro se appearance or eServices request if needed.",
+            "Register in the Vermont Public Portal.",
+            "Request elevated access as a case party.",
+            "If the portal will not link, contact the clerk and confirm the email on the case matches your portal account.",
+            "If no digital access exists, request inspection/copies from the clerk."
         ],
         links: [
-            { name: "Vermont Judiciary - Case Records", url: "https://www.vermontjudiciary.org/court-records" },
-            { name: "Vermont Courts Self-Help", url: "https://www.vermontjudiciary.org/self-help" }
+            { name: "Vermont Public Portal", url: "https://www.vtcourts.gov/about-vermont-judiciary/public-portal" },
+            { name: "Vermont eFiling", url: "https://www.vtcourts.gov/about-vermont-judiciary/electronic-access/electronic-filing" },
+            { name: "Vermont Forms", url: "https://www.vermontjudiciary.org/court-forms" }
         ]
     },
     "VA": {
         name: "Virginia",
-        systemName: "Virginia Courts Case Information System",
-        description: "Virginia provides an online case information system through the Virginia Judicial System website. Parties can search for their cases across all Virginia General District Courts, Circuit Courts, and Juvenile and Domestic Relations courts.",
+        systemName: "Online Case Information / OCRA",
+        description: "Virginia parties use Online Case Information for docket lookup and identify the court level (Circuit, General District, JDR, or appellate). OCRA remote document access is generally for attorneys/government users, so contact the Circuit Court Clerk for in-person inspection or copies.",
         steps: [
-            "Go to the Virginia Courts Case Information website.",
-            "Select the court type (Circuit, General District, or JDR).",
-            "Select the county or city where your case is filed.",
-            "Search by case number, party name, or hearing date.",
-            "View case details, docket entries, hearing dates, and case outcome."
+            "Use online case information for docket/case lookup.",
+            "Identify whether the case is Circuit Court, General District, Juvenile and Domestic Relations, or appellate.",
+            "OCRA remote document access is generally for attorneys/government-authorized users, not ordinary pro se parties.",
+            "Contact the Circuit Court Clerk or specific court clerk.",
+            "Request in-person inspection or copies of the official file.",
+            "Ask whether party status gives access beyond the public terminal."
         ],
         links: [
-            { name: "Virginia Courts - Case Information", url: "https://www.vacourts.gov/caseinfo/home.html" },
-            { name: "Virginia Courts - Online Case Access", url: "https://eapps.courts.state.va.us/cjisWeb/circuit.jsp" },
+            { name: "Virginia Online Case Information", url: "https://www.vacourts.gov/caseinfo/home.html" },
+            { name: "OCRA", url: "https://cisweb.courts.state.va.us/Ocra/" },
             { name: "Virginia Self-Help", url: "https://selfhelp.vacourts.gov/" }
         ]
     },
     "WA": {
         name: "Washington",
-        systemName: "Odyssey Portal / County Clerk Portals",
-        description: "Washington state courts use multiple systems. Many counties use the Odyssey portal for case access. King County (Seattle) has its own eCourt system. The Washington Courts website can help you find the right portal for your county.",
+        systemName: "Odyssey Portal / eFileWA",
+        description: "Washington parties search through Washington Courts search or the Odyssey Portal and register for eFileWA if filing. Anonymous users often see case information but not full documents, so contact the county clerk about party-level, subscription, terminal, or copy access. King and Pierce County may use separate systems.",
         steps: [
-            "Identify which county your case is filed in.",
-            "Visit that county's Superior Court or District Court website.",
-            "Look for 'Case Search,' 'Odyssey Portal,' or 'Court Records.'",
-            "Search by case number or party name.",
-            "View case details, filed documents, and hearing schedule."
+            "Search the case through Washington Courts search or Odyssey Portal if covered.",
+            "Register for eFileWA if electronic filing applies.",
+            "Anonymous users often see case information but not full documents.",
+            "Contact the county clerk for document access.",
+            "Ask whether the court offers party-level access, subscription access, terminal access, or copy requests.",
+            "King and Pierce County may use separate systems."
         ],
         links: [
-            { name: "King County (Seattle) - eCourt Case Search", url: "https://dja-prd-ecourt.powerappsportals.us/casenumbersearch/" },
-            { name: "Washington Courts - Find Your Court", url: "https://www.courts.wa.gov/court_dir/" },
-            { name: "Washington LawHelp", url: "https://www.washingtonlawhelp.org/" }
+            { name: "Washington Odyssey Portal", url: "https://odysseyportal.courts.wa.gov/odyportal" },
+            { name: "eFileWA", url: "https://www.efilewa.com/" },
+            { name: "Washington Courts Search", url: "https://www.courts.wa.gov/search/" }
         ]
     },
     "WV": {
         name: "West Virginia",
-        systemName: "West Virginia Judiciary Case Search",
-        description: "West Virginia provides a statewide case search through the WV Judiciary website. Parties can search for cases in all Magistrate Courts and Circuit Courts. The system provides basic case information and docket entries.",
+        systemName: "West Virginia Court Records (WVPASS)",
+        description: "West Virginia access depends on the court (Circuit, Family, Magistrate, or appellate). Use WVPASS or available judiciary record tools, confirm whether the result is a docket or includes documents, and contact the appropriate clerk for the official file and current docket.",
         steps: [
-            "Go to the West Virginia Judiciary case search page.",
-            "Choose Magistrate Court or Circuit Court search.",
-            "Search by case number, party name, or county.",
-            "View case details, docket entries, and hearing dates.",
-            "For full document access, contact the Circuit Clerk's office."
+            "Identify the county and court: Circuit, Family, Magistrate, or appellate.",
+            "Use WVPASS or available judiciary record tools where applicable.",
+            "Confirm whether the search result is only a docket or includes documents.",
+            "Contact the circuit clerk, family court clerk, or magistrate court clerk.",
+            "Request the official file and current docket.",
+            "If records are not digital, ask for counter inspection, public terminal access, mailed copies, or certified copies."
         ],
         links: [
-            { name: "WV Judiciary - Case Search", url: "https://www.courtswv.gov/public-resources/case-activity.html" },
-            { name: "WV Courts Self-Help", url: "https://www.courtswv.gov/public-resources/self-help.html" }
+            { name: "West Virginia Court Records", url: "https://www.courtswv.gov/court-record-access" },
+            { name: "West Virginia Judiciary", url: "https://www.courtswv.gov/" },
+            { name: "Court Information by County", url: "https://www.courtswv.gov/public-resources/court-information-by-county.html" }
         ]
     },
-
     "WI": {
         name: "Wisconsin",
-        systemName: "WCCA (Wisconsin Circuit Court Access)",
-        description: "Wisconsin provides WCCA (Wisconsin Circuit Court Access), a free statewide system that allows anyone to search for cases in all Wisconsin circuit courts. As a party, you can find your case and view all docket entries, filed documents, and hearing information.",
+        systemName: "WCCA (Circuit Court Access) / eFiling",
+        description: "Wisconsin parties search WCCA, which usually shows docket/case information rather than complete document images. Opt in to eFiling if your case allows it, and contact the clerk of circuit court for inspection/copies, certified copies, or courthouse terminal access.",
         steps: [
-            "Go to the WCCA (Wisconsin Circuit Court Access) website.",
-            "Search by case number, party name, or other criteria.",
-            "Select the county where your case is filed.",
-            "View complete case details, all docket entries, charges, and hearing dates.",
-            "Many counties also provide document images directly through WCCA."
+            "Search the case through WCCA.",
+            "WCCA usually shows docket/case information, not complete document images.",
+            "Opt in to eFiling if your case allows it and you want electronic service/access.",
+            "If documents are not visible, contact the clerk of circuit court.",
+            "Request inspection/copies of the official file.",
+            "Ask whether certified copies or courthouse terminal access are available."
         ],
         links: [
-            { name: "WCCA - Wisconsin Case Search", url: "https://wcca.wicourts.gov/" },
-            { name: "Wisconsin Courts Self-Help", url: "https://www.wicourts.gov/services/public/selfhelp/index.htm" }
+            { name: "WCCA Circuit Court Access", url: "https://wcca.wicourts.gov/" },
+            { name: "Wisconsin Circuit Court eFiling", url: "https://www.wicourts.gov/ecourts/efilecircuit/index.htm" },
+            { name: "Wisconsin Self-Help", url: "https://www.wicourts.gov/services/public/selfhelp/index.htm" }
         ]
     },
     "WY": {
         name: "Wyoming",
-        systemName: "Wyoming Court Case Search",
-        description: "Wyoming provides an online case search system through the Wyoming Judicial Branch website. Parties can search for cases across all Wyoming district courts and view case information and docket entries.",
+        systemName: "Public Case Search / eFiling",
+        description: "Wyoming access depends on the court (trial, district, circuit, municipal, or appellate). Use public case search for docket information and register through the proper eFiling system, asking the clerk whether your self-represented account can access the case file.",
         steps: [
-            "Go to the Wyoming Courts case search portal.",
-            "Search by case number, party name, or attorney.",
-            "Select the judicial district or county.",
-            "View case details, docket entries, and hearing schedule.",
-            "For copies of specific documents, contact the Clerk of District Court."
+            "Identify whether the case is trial court, district court, circuit court, municipal court, or appellate.",
+            "Use available public case search for docket information.",
+            "Register through the proper eFiling system if the case type allows it.",
+            "Ask the clerk whether your self-represented account can access the case file.",
+            "If not digital, request inspection/copies from the clerk.",
+            "For sealed/confidential records, ask what motion or court order is required."
         ],
         links: [
-            { name: "Wyoming Courts - Case Search", url: "https://www.courts.state.wy.us/Case_Search" },
-            { name: "Wyoming Self-Help Center", url: "https://www.courts.state.wy.us/self-help-center/" }
+            { name: "Wyoming Public Case Search", url: "https://efiling.courts.state.wy.us/public/caseSearch.do" },
+            { name: "Wyoming eFiling", url: "https://www.wyocourts.gov/efiling/" },
+            { name: "Wyoming Representing Yourself", url: "https://www.wyocourts.gov/self-help-forms/" }
         ]
     },
     "DC": {
         name: "District of Columbia",
         systemName: "DC Courts Case Search / eFiling",
-        description: "The District of Columbia Courts provide an online case search and e-filing system. Parties can search for their cases in Superior Court and view documents, hearing schedules, and docket information. The CaseFileXpress e-filing system provides document access for registered users.",
+        description: "In the District of Columbia, identify whether the case is in DC Superior Court or the DC Court of Appeals, search the case-search tools, and confirm you are a party of record. If document images are missing, contact the division clerk (Civil, Criminal, Family, Domestic Violence, Probate, Tax, Landlord-Tenant, Small Claims, or Appeals).",
         steps: [
-            "Go to the DC Courts case search page.",
-            "Search by case number, party name, or attorney.",
-            "View case details, docket entries, and hearing schedule.",
-            "For full document access, register on CaseFileXpress (e-filing system).",
-            "View and download filed documents from your case."
+            "Identify whether the case is in DC Superior Court or DC Court of Appeals.",
+            "Search the case through DC Courts' case-search tools.",
+            "Confirm that you are listed as a party of record.",
+            "If eFiling applies, register and connect to the case if allowed.",
+            "If document images are missing, contact the division clerk: Civil, Criminal, Family, Domestic Violence, Probate, Tax, Landlord-Tenant, Small Claims, or Appeals.",
+            "Request inspection/copies of the official file, subject to sealed/confidential restrictions."
         ],
         links: [
-            { name: "DC Courts - Case Search", url: "https://www.dccourts.gov/services/online-services/case-search" },
-            { name: "DC Courts - eFiling (CaseFileXpress)", url: "https://www.dccourts.gov/services/online-services/e-filing" },
-            { name: "DC Courts Self-Help Center", url: "https://www.dccourts.gov/services/self-help-center" }
+            { name: "DC Courts Case Search", url: "https://www.dccourts.gov/court-resources/search-cases" },
+            { name: "DC Courts eFiling", url: "https://www.dccourts.gov/superior-court/file-online-efiling" },
+            { name: "DC Legal Assistance / Represent Yourself", url: "https://www.dccourts.gov/services/represent-yourself" }
         ]
     }
 };
