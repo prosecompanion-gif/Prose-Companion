@@ -1,4 +1,5 @@
 // Episode 1: How to Access Your Case Files as a Party
+// Last verified: July 2026
 // Framing: not "does the state have e-access," but "what door does a party use
 // to reach the official court record" — online, at the courthouse, by clerk
 // request, by copy request, or by motion if access is denied.
