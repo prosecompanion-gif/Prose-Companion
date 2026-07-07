@@ -181,7 +181,7 @@ const stateData = {
         name: "Kansas",
         judiciary: { name: "Kansas Judicial Branch", url: "https://www.kscourts.org/" },
         courtRules: { name: "Kansas Court Rules & Orders", url: "https://www.kscourts.org/rules-orders" },
-        statutes: { name: "Kansas Statutes Annotated (KSA)", url: "https://www.ksrevisor.org/ksa.html" },
+        statutes: { name: "Kansas Laws & Statutes", url: "https://www.kslegislature.gov/b2025_26/laws/" },
         selfHelp: { name: "Kansas Self-Help Center", url: "https://www.kscourts.org/Public/Self-Help" },
         legalAid: [
             { name: "Kansas Legal Services", url: "https://www.kansaslegalservices.org/" },
