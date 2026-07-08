@@ -59,5 +59,32 @@ function initializeMap() {
                 dcCircle.setAttribute('id', 'state-DC');
                 dcCircle.style.cursor = 'pointer';
             }
+
+            // Add clickable territory boxes below the map
+            addTerritoryBoxes(mapContainer);
         });
+}
+
+function addTerritoryBoxes(mapContainer) {
+    const territories = [
+        { abbr: 'PR', name: 'Puerto Rico' },
+        { abbr: 'GU', name: 'Guam' },
+        { abbr: 'VI', name: 'U.S. Virgin Islands' },
+        { abbr: 'AS', name: 'American Samoa' },
+        { abbr: 'MP', name: 'N. Mariana Islands' }
+    ];
+
+    const wrapper = document.createElement('div');
+    wrapper.className = 'territory-boxes';
+
+    territories.forEach(t => {
+        const box = document.createElement('div');
+        box.className = 'territory-box';
+        box.setAttribute('data-state', t.abbr);
+        box.setAttribute('id', 'state-' + t.abbr);
+        box.textContent = t.name;
+        wrapper.appendChild(box);
+    });
+
+    mapContainer.appendChild(wrapper);
 }

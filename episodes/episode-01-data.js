@@ -932,5 +932,94 @@ const episodeData = {
             { name: "DC Courts eFiling", url: "https://www.dccourts.gov/superior-court/file-online-efiling" },
             { name: "DC Legal Assistance / Represent Yourself", url: "https://www.dccourts.gov/services/represent-yourself" }
         ]
+    },
+    "PR": {
+        name: "Puerto Rico",
+        systemName: "Tribunal Electr\u00f3nico / SUMAC",
+        description: "Puerto Rico's judiciary operates the Tribunal Electr\u00f3nico, which provides digital access to justice for parties and the public. Confirm you are a party of record, register in the electronic tribunal system, and use it to file and view case documents. If digital access is unavailable for your case type, contact the Secretar\u00eda del Tribunal (clerk) where the case is filed.",
+        steps: [
+            "Identify the Tribunal (court) where the case is filed: Tribunal de Primera Instancia (trial court), Tribunal de Apelaciones, or Tribunal Supremo.",
+            "Confirm you are listed as a party of record (parte) in the case.",
+            "Register in the Tribunal Electr\u00f3nico system to file and access case documents digitally.",
+            "If your case is available in SUMAC (the case management system), use it to view the docket and filed documents.",
+            "If digital access is not available for your case type, visit the Secretar\u00eda del Tribunal in the judicial region where the case is filed.",
+            "Request inspection or copies of the official file (expediente), docket entries, pleadings, orders, and nonrestricted exhibits."
+        ],
+        links: [
+            { name: "Tribunal Electr\u00f3nico", url: "https://tribunalelectronico.ramajudicial.pr/" },
+            { name: "Rama Judicial de Puerto Rico", url: "https://www.ramajudicial.pr/" },
+            { name: "Formularios (Court Forms)", url: "https://www.ramajudicial.pr/formularios" },
+            { name: "Servicios al Ciudadano", url: "https://www.ramajudicial.pr/servicios" }
+        ]
+    },
+    "GU": {
+        name: "Guam",
+        systemName: "Judiciary of Guam",
+        description: "Guam has a unified court system. Confirm your party status with the clerk, then request access to the official case file. The Judiciary of Guam may offer limited online docket access, but for the full official file, contact the Clerk of Court at the Supreme Court of Guam or the Superior Court of Guam where the case is filed.",
+        steps: [
+            "Identify whether the case is in the Superior Court of Guam or the Supreme Court of Guam.",
+            "Confirm you are listed as a party of record.",
+            "Check the Judiciary of Guam website for any available online case search or docket tools.",
+            "If online access is unavailable, contact the Clerk of Court where the case is filed.",
+            "Request inspection or copies of the official case file, docket entries, pleadings, orders, and judgments.",
+            "For sealed, juvenile, or confidential matters, ask the clerk what access restrictions apply."
+        ],
+        links: [
+            { name: "Judiciary of Guam", url: "https://www.guamcourts.org/" },
+            { name: "Guam Court Rules", url: "https://www.guamcourts.org/CompilerofLaws/CourtRules.html" },
+            { name: "Guam Code Annotated", url: "https://www.guamlegislature.com/Guam_Code_Annotated.html" }
+        ]
+    },
+    "VI": {
+        name: "U.S. Virgin Islands",
+        systemName: "VI Courts Portal",
+        description: "The U.S. Virgin Islands judiciary consists of the Superior Court and the Supreme Court. Court records access is primarily through the Clerk of Court. Contact the clerk at the district (St. Thomas/St. John or St. Croix) where the case is filed to verify party status and request the official file.",
+        steps: [
+            "Identify whether the case is in the Superior Court (St. Thomas/St. John or St. Croix division) or the Supreme Court of the Virgin Islands.",
+            "Confirm you are listed as a party of record.",
+            "Check the VI Courts portal for any available online case information.",
+            "If online access is limited, contact the Clerk of the Superior Court in the district where the case is filed.",
+            "Request inspection or copies of the official file, docket entries, pleadings, motions, orders, and judgments.",
+            "For sealed, juvenile, or confidential matters, ask the clerk about access restrictions."
+        ],
+        links: [
+            { name: "VI Courts Portal", url: "https://vicourts.org/" },
+            { name: "Virgin Islands Code", url: "https://www.visenate.org/legislation/virgin-islands-code/" }
+        ]
+    },
+    "AS": {
+        name: "American Samoa",
+        systemName: "High Court of American Samoa",
+        description: "American Samoa has a single trial court (the High Court) which handles all cases. Court records access is through the Clerk of Court at the High Court in Pago Pago. There is limited or no digital case access, so in-person or written requests to the clerk are the primary method.",
+        steps: [
+            "Identify that your case is in the High Court of American Samoa (the only trial court in the territory).",
+            "Confirm you are listed as a party of record.",
+            "Contact the Clerk of the High Court in Pago Pago.",
+            "Request inspection or copies of the official case file.",
+            "Ask for the docket, pleadings, motions, orders, judgments, and nonrestricted filed exhibits.",
+            "For sealed or confidential matters, ask the clerk what restrictions apply and whether a motion is needed."
+        ],
+        links: [
+            { name: "High Court of American Samoa", url: "http://www.justice.gov.as/" },
+            { name: "American Samoa Bar Association", url: "https://www.asbar.org/" }
+        ]
+    },
+    "MP": {
+        name: "Northern Mariana Islands",
+        systemName: "CNMI Judiciary / CNMI Law",
+        description: "The Commonwealth of the Northern Mariana Islands (CNMI) has a Superior Court (trial level) and a Supreme Court. The CNMI Law Revision Commission publishes court rules and decisions online. For the official case file, contact the Clerk of the Superior Court in Saipan.",
+        steps: [
+            "Identify whether the case is in the CNMI Superior Court or the CNMI Supreme Court.",
+            "Confirm you are listed as a party of record.",
+            "Check the CNMI Law Revision Commission website for published court decisions and rules.",
+            "Contact the Clerk of the Superior Court in Saipan for access to the official case file.",
+            "Request inspection or copies of docket entries, pleadings, motions, orders, and judgments.",
+            "For sealed or confidential matters, ask the clerk what restrictions apply."
+        ],
+        links: [
+            { name: "CNMI Law Revision Commission", url: "https://cnmilaw.org/" },
+            { name: "CNMI Court Rules", url: "https://cnmilaw.org/court_rules.htm" },
+            { name: "CNMI Court Decisions", url: "https://cnmilaw.org/court_decisions.htm" }
+        ]
     }
 };
