@@ -600,5 +600,16 @@ const stateData = {
             { name: "Legal Aid Society of DC", url: "https://www.legalaiddc.org/" },
             { name: "DC Bar Pro Bono Center", url: "https://www.dcbar.org/pro-bono" }
         ]
+    },
+
+    "PR": {
+        name: "Puerto Rico",
+        judiciary: { name: "Rama Judicial de Puerto Rico", url: "https://www.ramajudicial.pr/" },
+        courtRules: { name: "Reglas de Procedimiento", url: "https://www.ramajudicial.pr/leyes-anotadas/reglas" },
+        statutes: { name: "Leyes de Puerto Rico", url: "https://www.lexjuris.com/" },
+        selfHelp: { name: "Servicios al Ciudadano", url: "https://www.ramajudicial.pr/servicios" },
+        legalAid: [
+            { name: "Servicios Legales de Puerto Rico", url: "https://www.servicioslegales.org/" }
+        ]
     }
 };
