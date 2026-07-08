@@ -15,8 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function buildStateDirectory() {
-    var tbody = document.getElementById('state-directory-tbody');
-    if (!tbody) return;
+    var tbodyLeft = document.getElementById('state-directory-tbody-left');
+    var tbodyRight = document.getElementById('state-directory-tbody-right');
+    if (!tbodyLeft || !tbodyRight) return;
 
     // Sort states alphabetically by name
     var abbrs = Object.keys(stateData);
@@ -24,27 +25,54 @@ function buildStateDirectory() {
         return stateData[a].name.localeCompare(stateData[b].name);
     });
 
-    abbrs.forEach(function(abbr) {
-        var s = stateData[abbr];
-        var tr = document.createElement('tr');
-
-        var tdState = document.createElement('td');
-        tdState.innerHTML = '<strong>' + s.name + '</strong>';
-        tr.appendChild(tdState);
-
-        var tdLinks = document.createElement('td');
-        var linksHtml = '<a href="' + s.judiciary.url + '" target="_blank" rel="noopener">Official Court Website</a><br>';
-        linksHtml += '<a href="' + s.selfHelp.url + '" target="_blank" rel="noopener">Self-Help Resources</a>';
-        // Add e-filing link for Maryland (MDEC) as shown in the PDF
-        if (abbr === 'MD') {
-            linksHtml += '<br><a href="https://mdecportal.courts.state.md.us/mdec/" target="_blank" rel="noopener">E-Filing (MDEC)</a>';
-            linksHtml += '<br><a href="https://www.peoples-law.org/" target="_blank" rel="noopener">Law Library</a>';
-        }
-        tdLinks.innerHTML = linksHtml;
-        tr.appendChild(tdLinks);
-
-        tbody.appendChild(tr);
+    // Split: first 25 US states in left column,
+    // remaining states plus territories in right column.
+    // Territories always go in the right column.
+    var territories = ['DC', 'PR', 'GU', 'VI', 'AS', 'MP'];
+    var statesOnly = abbrs.filter(function(abbr) {
+        return territories.indexOf(abbr) === -1;
     });
+    var leftAbbrs = statesOnly.slice(0, 25);
+    var rightAbbrs = statesOnly.slice(25).concat(
+        abbrs.filter(function(abbr) {
+            return territories.indexOf(abbr) !== -1;
+        })
+    );
+
+    // Sort right column alphabetically by name
+    rightAbbrs.sort(function(a, b) {
+        return stateData[a].name.localeCompare(stateData[b].name);
+    });
+
+    leftAbbrs.forEach(function(abbr) {
+        tbodyLeft.appendChild(createDirectoryRow(abbr));
+    });
+
+    rightAbbrs.forEach(function(abbr) {
+        tbodyRight.appendChild(createDirectoryRow(abbr));
+    });
+}
+
+function createDirectoryRow(abbr) {
+    var s = stateData[abbr];
+    var tr = document.createElement('tr');
+
+    var tdState = document.createElement('td');
+    tdState.innerHTML = '<strong>' + s.name + '</strong>';
+    tr.appendChild(tdState);
+
+    var tdLinks = document.createElement('td');
+    var linksHtml = '<a href="' + s.judiciary.url + '" target="_blank" rel="noopener">Official Court Website</a><br>';
+    linksHtml += '<a href="' + s.selfHelp.url + '" target="_blank" rel="noopener">Self-Help Resources</a>';
+    // Add e-filing link for Maryland (MDEC) as shown in the PDF
+    if (abbr === 'MD') {
+        linksHtml += '<br><a href="https://mdecportal.courts.state.md.us/mdec/" target="_blank" rel="noopener">E-Filing (MDEC)</a>';
+        linksHtml += '<br><a href="https://www.peoples-law.org/" target="_blank" rel="noopener">Law Library</a>';
+    }
+    tdLinks.innerHTML = linksHtml;
+    tr.appendChild(tdLinks);
+
+    return tr;
 }
 
 function setupMapInteraction() {

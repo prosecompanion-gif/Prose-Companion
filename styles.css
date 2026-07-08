@@ -355,9 +355,30 @@ main {
 
 .map-instruction {
     margin-top: 1.5rem;
-    color: var(--text-muted);
-    font-size: 1rem;
+    color: #ffffff;
+    font-size: 1.1rem;
     font-style: italic;
+}
+
+.map-instruction-secondary {
+    margin-top: 0.5rem;
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-style: italic;
+}
+
+/* === TWO-COLUMN DIRECTORY === */
+.directory-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .directory-columns {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }
 
 /* === STATE PANEL === */

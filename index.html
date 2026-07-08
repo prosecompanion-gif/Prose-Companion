@@ -32,6 +32,7 @@
                 <!-- SVG map will be loaded here -->
             </div>
             <p class="map-instruction">Click on your state to see additional resources, official court links, and self-help portals beyond what's listed in the directory below</p>
+            <p class="map-instruction-secondary">Federal courts are different — find those links and other helpful resources at the bottom of this page.</p>
         </section>
 
         <section class="state-panel" id="state-panel">
@@ -45,18 +46,33 @@
         <!-- Full State Court Directory Table -->
         <section class="directory-section" id="directory">
             <h2 class="section-title">Official State Court Websites</h2>
-            <div class="directory-table-wrap">
-                <table class="directory-table">
-                    <thead>
-                        <tr>
-                            <th>State</th>
-                            <th>Official Court Resources</th>
-                        </tr>
-                    </thead>
-                    <tbody id="state-directory-tbody">
-                        <!-- Populated by JS -->
-                    </tbody>
-                </table>
+            <div class="directory-columns">
+                <div class="directory-table-wrap">
+                    <table class="directory-table">
+                        <thead>
+                            <tr>
+                                <th>State</th>
+                                <th>Official Court Resources</th>
+                            </tr>
+                        </thead>
+                        <tbody id="state-directory-tbody-left">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="directory-table-wrap">
+                    <table class="directory-table">
+                        <thead>
+                            <tr>
+                                <th>State</th>
+                                <th>Official Court Resources</th>
+                            </tr>
+                        </thead>
+                        <tbody id="state-directory-tbody-right">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
 
@@ -106,6 +122,18 @@
                         <tr><td>LawHelp.org</td><td><a href="https://www.lawhelp.org/" target="_blank" rel="noopener">Find free legal help near you</a></td></tr>
                         <tr><td>ABA Free Legal Answers</td><td><a href="https://abafreelegalanswers.org/" target="_blank" rel="noopener">Free legal advice online</a></td></tr>
                         <tr><td>National Legal Aid & Defender Association</td><td><a href="https://www.nlada.org/" target="_blank" rel="noopener">Legal aid and defender resources</a></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Community Accountability Resources -->
+        <section class="directory-section" id="accountability">
+            <h2 class="section-title">Community Accountability Resources</h2>
+            <div class="directory-table-wrap">
+                <table class="directory-table">
+                    <tbody>
+                        <tr><td>Police Scorecard</td><td><a href="https://policescorecard.org/" target="_blank" rel="noopener">Police Scorecard evaluates police departments across the country on their use of force, accountability, and approach to law enforcement. Search your city or county to see how your local department scores — useful context when navigating the justice system in your area.</a></td></tr>
                     </tbody>
                 </table>
             </div>

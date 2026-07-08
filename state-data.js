@@ -600,5 +600,60 @@ const stateData = {
             { name: "Legal Aid Society of DC", url: "https://www.legalaiddc.org/" },
             { name: "DC Bar Pro Bono Center", url: "https://www.dcbar.org/pro-bono" }
         ]
+    },
+
+    "PR": {
+        name: "Puerto Rico",
+        judiciary: { name: "Rama Judicial de Puerto Rico", url: "https://www.ramajudicial.pr/" },
+        courtRules: { name: "Reglas de Procedimiento", url: "https://www.ramajudicial.pr/leyes-anotadas/reglas" },
+        statutes: { name: "Leyes de Puerto Rico", url: "https://www.lexjuris.com/" },
+        selfHelp: { name: "Servicios al Ciudadano", url: "https://www.ramajudicial.pr/servicios" },
+        legalAid: [
+            { name: "Servicios Legales de Puerto Rico", url: "https://www.servicioslegales.org/" }
+        ]
+    },
+
+    "GU": {
+        name: "Guam",
+        judiciary: { name: "Judiciary of Guam", url: "https://www.guamcourts.org/" },
+        courtRules: { name: "Guam Rules of Court", url: "https://www.guamcourts.org/CompilerofLaws/CourtRules.html" },
+        statutes: { name: "Guam Code Annotated", url: "https://www.guamlegislature.com/Guam_Code_Annotated.html" },
+        selfHelp: { name: "Guam Courts Information", url: "https://www.guamcourts.org/" },
+        legalAid: [
+            { name: "Guam Legal Services Corporation", url: "https://www.guamlsc.org/" }
+        ]
+    },
+
+    "VI": {
+        name: "U.S. Virgin Islands",
+        judiciary: { name: "Judiciary of the U.S. Virgin Islands", url: "https://vicourts.org/" },
+        courtRules: { name: "VI Rules of Court", url: "https://vicourts.org/" },
+        statutes: { name: "Virgin Islands Code", url: "https://www.visenate.org/legislation/virgin-islands-code/" },
+        selfHelp: { name: "VI Courts", url: "https://vicourts.org/" },
+        legalAid: [
+            { name: "Legal Services of the Virgin Islands", url: "https://www.lsvi.org/" }
+        ]
+    },
+
+    "AS": {
+        name: "American Samoa",
+        judiciary: { name: "High Court of American Samoa", url: "http://www.justice.gov.as/" },
+        courtRules: { name: "American Samoa Court Rules", url: "http://www.justice.gov.as/" },
+        statutes: { name: "American Samoa Code Annotated", url: "http://www.asbar.org/" },
+        selfHelp: { name: "American Samoa Bar Association", url: "https://www.asbar.org/" },
+        legalAid: [
+            { name: "American Samoa Bar Association", url: "https://www.asbar.org/" }
+        ]
+    },
+
+    "MP": {
+        name: "Northern Mariana Islands",
+        judiciary: { name: "CNMI Judiciary", url: "https://cnmilaw.org/" },
+        courtRules: { name: "CNMI Court Rules", url: "https://cnmilaw.org/court_rules.htm" },
+        statutes: { name: "Commonwealth Code", url: "https://cnmilaw.org/commonwealth_code.htm" },
+        selfHelp: { name: "CNMI Law Revision Commission", url: "https://cnmilaw.org/" },
+        legalAid: [
+            { name: "Micronesian Legal Services Corporation", url: "https://mlscnet.org/" }
+        ]
     }
 };
