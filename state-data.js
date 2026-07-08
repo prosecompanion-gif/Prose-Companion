@@ -605,8 +605,8 @@ const stateData = {
     "PR": {
         name: "Puerto Rico",
         judiciary: { name: "Rama Judicial de Puerto Rico", url: "https://www.ramajudicial.pr/" },
-        courtRules: { name: "Reglas de Procedimiento", url: "https://www.ramajudicial.pr/leyes-anotadas/reglas" },
-        statutes: { name: "Leyes de Puerto Rico", url: "https://www.lexjuris.com/" },
+        courtRules: { name: "Tribunal Supremo (Reglas de Procedimiento)", url: "https://www.ramajudicial.pr/tribunal-supremo" },
+        statutes: { name: "Leyes de Puerto Rico (LexJuris)", url: "https://www.lexjuris.com/" },
         selfHelp: { name: "Servicios al Ciudadano", url: "https://www.ramajudicial.pr/servicios" },
         legalAid: [
             { name: "Servicios Legales de Puerto Rico", url: "https://www.servicioslegales.org/" }
@@ -618,7 +618,7 @@ const stateData = {
         judiciary: { name: "Judiciary of Guam", url: "https://www.guamcourts.org/" },
         courtRules: { name: "Guam Rules of Court", url: "https://www.guamcourts.org/CompilerofLaws/CourtRules.html" },
         statutes: { name: "Guam Code Annotated", url: "https://www.guamlegislature.com/Guam_Code_Annotated.html" },
-        selfHelp: { name: "Guam Courts Information", url: "https://www.guamcourts.org/" },
+        selfHelp: { name: "Guam Courts", url: "https://www.guamcourts.org/" },
         legalAid: [
             { name: "Guam Legal Services Corporation", url: "https://www.guamlsc.org/" }
         ]
