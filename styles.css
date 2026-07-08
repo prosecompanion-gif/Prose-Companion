@@ -367,6 +367,34 @@ main {
     font-style: italic;
 }
 
+/* === TERRITORY BOXES === */
+.territory-boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding: 0 1rem;
+}
+
+.territory-box {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+}
+
+.territory-box:hover {
+    border-color: var(--accent);
+    background: var(--bg-card-hover);
+    color: var(--accent);
+}
+
 /* === TWO-COLUMN DIRECTORY === */
 .directory-columns {
     display: grid;
