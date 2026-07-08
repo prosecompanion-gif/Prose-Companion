@@ -25,10 +25,10 @@ function buildStateDirectory() {
         return stateData[a].name.localeCompare(stateData[b].name);
     });
 
-    // Split: first 25 US states (AL through MO by name) in left column,
-    // remaining states plus DC and Puerto Rico in right column.
-    // DC and PR always go in the right column.
-    var territories = ['DC', 'PR'];
+    // Split: first 25 US states in left column,
+    // remaining states plus territories in right column.
+    // Territories always go in the right column.
+    var territories = ['DC', 'PR', 'GU', 'VI', 'AS', 'MP'];
     var statesOnly = abbrs.filter(function(abbr) {
         return territories.indexOf(abbr) === -1;
     });
