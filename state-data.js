@@ -39,7 +39,7 @@ const stateData = {
     "AR": {
         name: "Arkansas",
         judiciary: { name: "Arkansas Judiciary", url: "https://www.arcourts.gov/" },
-        courtRules: { name: "Arkansas Court Rules", url: "https://www.arcourts.gov/rules-and-administrative-orders" },
+        courtRules: { name: "Arkansas Court Rules", url: "https://arcourtkiosk.org/statutes-court-rules/" },
         statutes: { name: "Arkansas Code", url: "https://www.lexisnexis.com/hottopics/arcode/" },
         selfHelp: { name: "Arkansas Legal Services Online", url: "https://www.arlegalservices.org/" },
         legalAid: [
@@ -133,7 +133,7 @@ const stateData = {
     "ID": {
         name: "Idaho",
         judiciary: { name: "Idaho Supreme Court", url: "https://isc.idaho.gov/" },
-        courtRules: { name: "Idaho Court Rules", url: "https://isc.idaho.gov/rules" },
+        courtRules: { name: "Idaho Court Rules", url: "https://isc.idaho.gov/rules-procedure" },
         statutes: { name: "Idaho Statutes", url: "https://legislature.idaho.gov/statutesrules/idstat/" },
         selfHelp: { name: "Idaho Court Assistance", url: "https://courtselfhelp.idaho.gov/" },
         legalAid: [
@@ -180,9 +180,9 @@ const stateData = {
     "KS": {
         name: "Kansas",
         judiciary: { name: "Kansas Judicial Branch", url: "https://www.kscourts.org/" },
-        courtRules: { name: "Kansas Court Rules", url: "https://www.kscourts.org/Rules-Orders" },
-        statutes: { name: "Kansas Statutes", url: "http://www.kslegislature.org/li/b2023_24/statute/" },
-        selfHelp: { name: "Kansas Self-Help Center", url: "https://www.kscourts.org/Public/Self-Help" },
+        courtRules: { name: "Kansas Court Rules (2026 Rule Book PDF)", url: "https://kscourts.gov/KSCourts/media/KsCourts/Rules/2026-RuleBook.pdf" },
+        statutes: { name: "Kansas Laws & Statutes", url: "https://www.kslegislature.gov/b2025_26/laws/" },
+        selfHelp: { name: "Kansas Self-Help Center", url: "https://self-help.kscourts.gov/" },
         legalAid: [
             { name: "Kansas Legal Services", url: "https://www.kansaslegalservices.org/" },
             { name: "Kansas Bar Pro Bono", url: "https://www.ksbar.org/page/pro_bono" }
@@ -262,7 +262,7 @@ const stateData = {
     "MN": {
         name: "Minnesota",
         judiciary: { name: "Minnesota Judicial Branch", url: "https://www.mncourts.gov/" },
-        courtRules: { name: "Minnesota Court Rules", url: "https://www.mncourts.gov/CourtRules.aspx" },
+        courtRules: { name: "Minnesota Court Rules", url: "https://www.revisor.mn.gov/court_rules/" },
         statutes: { name: "Minnesota Statutes", url: "https://www.revisor.mn.gov/statutes/" },
         selfHelp: { name: "Minnesota Self-Help Center", url: "https://www.mncourts.gov/Help-Topics.aspx" },
         legalAid: [
@@ -285,12 +285,15 @@ const stateData = {
     "MO": {
         name: "Missouri",
         judiciary: { name: "Missouri Courts", url: "https://www.courts.mo.gov/" },
-        courtRules: { name: "Missouri Court Rules", url: "https://www.courts.mo.gov/courts/ClerkHandbooksP2RusijJoint.htm" },
+        courtRules: { name: "Missouri Court Rules", url: "https://www.courts.mo.gov/page.jsp?id=676" },
         statutes: { name: "Missouri Revised Statutes", url: "https://revisor.mo.gov/main/HomeMain.aspx" },
         selfHelp: { name: "Missouri Self-Help Center", url: "https://www.courts.mo.gov/page.jsp?id=704" },
         legalAid: [
             { name: "Legal Services of Eastern Missouri", url: "https://www.lsem.org/" },
-            { name: "Legal Aid of Western Missouri", url: "https://www.lawmo.org/" }
+            { name: "Legal Aid of Western Missouri", url: "https://www.lawmo.org/" },
+            { name: "Missouri Self-Represent Family Law", url: "https://www.courts.mo.gov/page.jsp?id=5240" },
+            { name: "MU Law Library Pro Se Guide", url: "https://libraryguides.missouri.edu/c.php?g=28063&p=173037" },
+            { name: "St. Louis City Circuit - Represent Yourself", url: "https://www.stlcitycircuitcourt.com/courts_services/represent_yourself.php" }
         ]
     },
     "MT": {
@@ -354,9 +357,9 @@ const stateData = {
     "NM": {
         name: "New Mexico",
         judiciary: { name: "New Mexico Courts", url: "https://www.nmcourts.gov/" },
-        courtRules: { name: "NM Rules of Court", url: "https://www.nmcourts.gov/court-rules/" },
-        statutes: { name: "New Mexico Statutes", url: "https://nmonesource.com/nmos/nmsa/en/nav.do" },
-        selfHelp: { name: "NM Courts Self-Help", url: "https://www.nmcourts.gov/self-help/" },
+        courtRules: { name: "NM Rules of Court", url: "https://nmonesource.com/nmos/en/nav.do" },
+        statutes: { name: "New Mexico Statutes & Laws", url: "https://nmonesource.com/nmos/en/nav.do" },
+        selfHelp: { name: "NM Courts Self-Help Guide", url: "https://nmcourts.gov/forms-files/self-help-guide/" },
         legalAid: [
             { name: "New Mexico Legal Aid", url: "https://www.newmexicolegalaid.org/" },
             { name: "Law Access New Mexico", url: "https://www.lawaccess.org/" }
@@ -426,11 +429,12 @@ const stateData = {
         judiciary: { name: "Oregon Judicial Department", url: "https://www.courts.oregon.gov/" },
         courtRules: { name: "Oregon Rules of Court", url: "https://www.courts.oregon.gov/rules/Pages/default.aspx" },
         statutes: { name: "Oregon Revised Statutes", url: "https://www.oregonlegislature.gov/bills_laws/Pages/ORS.aspx" },
-        selfHelp: { name: "Oregon Courts Self-Help", url: "https://www.courts.oregon.gov/self-help/Pages/default.aspx" },
+        selfHelp: { name: "Oregon Courts Self-Help", url: "https://www.courts.oregon.gov/help/Pages/default.aspx" },
         legalAid: [
             { name: "Oregon Law Center", url: "https://www.oregonlawcenter.org/" },
             { name: "Legal Aid Services of Oregon", url: "https://lasoregon.org/" },
-            { name: "Oregon State Bar Lawyer Referral", url: "https://www.osbar.org/public/" }
+            { name: "Oregon State Bar Lawyer Referral", url: "https://www.osbar.org/public/" },
+            { name: "Oregon Court Forms", url: "https://www.courts.oregon.gov/forms/pages/default.aspx" }
         ]
     },
     "PA": {
@@ -474,7 +478,7 @@ const stateData = {
         judiciary: { name: "South Dakota Unified Judicial System", url: "https://ujs.sd.gov/" },
         courtRules: { name: "SD Rules of Court", url: "https://ujs.sd.gov/Supreme_Court/Rules.aspx" },
         statutes: { name: "South Dakota Codified Laws", url: "https://sdlegislature.gov/Statutes/Codified_Laws" },
-        selfHelp: { name: "SD Courts Self-Help", url: "https://ujs.sd.gov/Self_Help/" },
+        selfHelp: { name: "SD Courts Self-Help", url: "https://ujs.sd.gov/self-help/" },
         legalAid: [
             { name: "East River Legal Services", url: "https://www.erlservices.org/" },
             { name: "Dakota Plains Legal Services", url: "https://www.dpls.org/" }
@@ -579,7 +583,7 @@ const stateData = {
         judiciary: { name: "Wyoming Judicial Branch", url: "https://www.courts.state.wy.us/" },
         courtRules: { name: "Wyoming Court Rules", url: "https://www.courts.state.wy.us/court-rules/" },
         statutes: { name: "Wyoming Statutes", url: "https://wyoleg.gov/NXT/gateway.dll?f=templates&fn=default.htm" },
-        selfHelp: { name: "Wyoming Self-Help Center", url: "https://www.courts.state.wy.us/self-help-center/" },
+        selfHelp: { name: "Wyoming Self-Help Center", url: "https://www.wyocourts.gov/self-help-forms/" },
         legalAid: [
             { name: "Legal Aid of Wyoming", url: "https://www.lawyoming.org/" },
             { name: "Wyoming State Bar Lawyer Referral", url: "https://www.wyomingbar.org/for-the-public/hire-a-lawyer/" }
