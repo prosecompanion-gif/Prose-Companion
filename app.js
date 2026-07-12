@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Build the state directory table
     buildStateDirectory();
 
+    // Build and wire up mobile state selector dropdown
+    buildMobileDropdown();
+
     // Back button
     document.getElementById('back-btn').addEventListener('click', function() {
         showMap();
@@ -190,4 +193,32 @@ function showMap() {
     document.getElementById('state-panel').classList.remove('active');
     document.getElementById('map-section').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function buildMobileDropdown() {
+    var dropdown = document.getElementById('state-dropdown');
+    if (!dropdown) return;
+
+    // Get all states/territories sorted by name
+    var abbrs = Object.keys(stateData);
+    abbrs.sort(function(a, b) {
+        return stateData[a].name.localeCompare(stateData[b].name);
+    });
+
+    // Populate dropdown
+    abbrs.forEach(function(abbr) {
+        var option = document.createElement('option');
+        option.value = abbr;
+        option.textContent = stateData[abbr].name;
+        dropdown.appendChild(option);
+    });
+
+    // Handle selection
+    dropdown.addEventListener('change', function() {
+        var selected = dropdown.value;
+        if (selected && stateData[selected]) {
+            showStatePanel(selected);
+            dropdown.value = ''; // Reset for next use
+        }
+    });
 }

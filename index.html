@@ -28,6 +28,13 @@
 
         <!-- Interactive Map -->
         <section class="map-section" id="map-section">
+            <!-- Mobile state selector (hidden on desktop) -->
+            <div class="mobile-state-select">
+                <label for="state-dropdown">Select your state or territory:</label>
+                <select id="state-dropdown">
+                    <option value="">-- Choose --</option>
+                </select>
+            </div>
             <div class="map-container" id="map-container">
                 <!-- SVG map will be loaded here -->
             </div>
