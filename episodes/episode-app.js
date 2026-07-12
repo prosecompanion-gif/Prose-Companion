@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
         setupEpisodeMapInteraction();
     });
 
+    // Build mobile dropdown for episode
+    buildEpisodeMobileDropdown();
+
     // Back button
     document.getElementById('back-btn').addEventListener('click', function() {
         showEpisodeMap();
@@ -139,4 +142,32 @@ function showEpisodeMap() {
     document.getElementById('state-panel').classList.remove('active');
     document.getElementById('map-section').style.display = 'block';
     window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function buildEpisodeMobileDropdown() {
+    var dropdown = document.getElementById('state-dropdown');
+    if (!dropdown) return;
+
+    // Get all states/territories from episodeData sorted by name
+    var abbrs = Object.keys(episodeData);
+    abbrs.sort(function(a, b) {
+        return episodeData[a].name.localeCompare(episodeData[b].name);
+    });
+
+    // Populate dropdown
+    abbrs.forEach(function(abbr) {
+        var option = document.createElement('option');
+        option.value = abbr;
+        option.textContent = episodeData[abbr].name;
+        dropdown.appendChild(option);
+    });
+
+    // Handle selection
+    dropdown.addEventListener('change', function() {
+        var selected = dropdown.value;
+        if (selected && episodeData[selected]) {
+            showEpisodeStatePanel(selected);
+            dropdown.value = ''; // Reset for next use
+        }
+    });
 }
