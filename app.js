@@ -5,9 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
         setupMapInteraction();
     });
 
-    // Build the state directory table
-    buildStateDirectory();
-
     // Back button
     document.getElementById('back-btn').addEventListener('click', function() {
         showMap();
